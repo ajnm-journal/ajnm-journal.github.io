@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    	<meta charset="utf-8" />
+    	<title>Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy</title>
+    	<link rel="shortcut icon" type="image/ico" href="./data/advjnm/coversheet/favicon.ico" />
+    	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    
+    	<!-- user defined metatags -->
+    	
+		<meta name="keywords" content="Romidepsin,graphene oxide,Molecular Dynamics Simulation,Drug Delivery,Histone deacetylase inhibitor,Nanocarrier,Adsorption behavior,Solid tumor therapy" />
+		<meta name="description" content="Romidepsin (ROM) is a cyclic peptide and FDA-approved histone deacetylase (HDAC) inhibitor with strong antitumor activity in hematological malignancies. However, its clinical application in solid tumors is limited due to poor aqueous solubility, rapid systemic clearance, and unfavorable bio-distribution. We performed 200-nanosecond all-atom molecular dynamics (MD) simulations under physiologically relevant conditions to investigate the ROM interaction with a hydroxyl- and carboxyl-functionalized graphene oxide (GRP) nanosheet. The system was analyzed using metrics including root mean square deviation (RMSD), interaction energy decomposition, hydrogen bonding, and solvent-accessible surface area (SASA). ROM exhibited rapid and stable adsorption onto the GRP surface, primarily driven by van der Waals and π–π stacking interactions, with further stabilization via hydrogen bonding. ROM molecules formed stable, multilayered aggregates on GRP without significant structural disruption, maintaining close surface contact throughout the trajectory. SASA analysis showed increased aqueous exposure and dispersibility of the ROM–GRP complex relative to GRP alone. The results demonstrate the high-affinity, stable loading of ROM onto functionalized GRP, providing atomistic insights into the encapsulation and solubilization mechanism. These findings provide a theoretical framework for the development of GRP-based nanocarriers to improve ROM delivery in solid tumor therapy and support further in vitro and in vivo validation of this nanoplatform for biomedical applications." />
+		<meta name="title" content="Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy" />
+		<meta name="googlebot" content="NOODP" />
+		<meta name="citation_title" content="Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy" />
+		<meta name="citation_author" content="Gavari-Bami, Sarah" />
+		<meta name="citation_author_institution" content="Department of Nanotechnology, Graduate University of Advanced Technology, Kerman, Iran" />
+		<meta name="citation_author" content="Bayramzadeh, Hedieh" />
+		<meta name="citation_author_institution" content="Department of Chemisry, Graduate University of Advanced Technology, Kerman, Iran" />
+		<meta name="citation_author" content="Yoosefian, Mehdi" />
+		<meta name="citation_author_institution" content="Department of Nanotechnology, Graduate University of Advanced Technology, Kerman, Iran" />
+		<meta name="citation_author_institution" content="Department of Chemisry, Graduate University of Advanced Technology, Kerman, Iran" />
+		<meta name="citation_abstract" content="Romidepsin (ROM) is a cyclic peptide and FDA-approved histone deacetylase (HDAC) inhibitor with strong antitumor activity in hematological malignancies. However, its clinical application in solid tumors is limited due to poor aqueous solubility, rapid systemic clearance, and unfavorable bio-distribution. We performed 200-nanosecond all-atom molecular dynamics (MD) simulations under physiologically relevant conditions to investigate the ROM interaction with a hydroxyl- and carboxyl-functionalized graphene oxide (GRP) nanosheet. The system was analyzed using metrics including root mean square deviation (RMSD), interaction energy decomposition, hydrogen bonding, and solvent-accessible surface area (SASA). ROM exhibited rapid and stable adsorption onto the GRP surface, primarily driven by van der Waals and π–π stacking interactions, with further stabilization via hydrogen bonding. ROM molecules formed stable, multilayered aggregates on GRP without significant structural disruption, maintaining close surface contact throughout the trajectory. SASA analysis showed increased aqueous exposure and dispersibility of the ROM–GRP complex relative to GRP alone. The results demonstrate the high-affinity, stable loading of ROM onto functionalized GRP, providing atomistic insights into the encapsulation and solubilization mechanism. These findings provide a theoretical framework for the development of GRP-based nanocarriers to improve ROM delivery in solid tumor therapy and support further in vitro and in vivo validation of this nanoplatform for biomedical applications." />
+		<meta name="citation_id" content="226427" />
+		<meta name="citation_publication_date" content="2025/02/27" />
+		<meta name="citation_date" content="2025-02-27" />
+		<meta name="citation_journal_title" content="Advanced Journal of Nanochemistry and Medicine" />
+		<meta name="citation_issn" content="3150-4248" />
+		<meta name="citation_volume" content="1" />
+		<meta name="citation_issue" content="1" />
+		<meta name="citation_firstpage" content="1" />
+		<meta name="citation_lastpage" content="16" />
+		<meta name="citation_publisher" content="Sami Publishing Company" />
+		<meta name="citation_doi" content="10.48309/ajnm.2025.226427" />
+		<meta name="DC.Identifier" content="10.48309/ajnm.2025.226427" />
+		<meta name="citation_abstract_html_url" content="https://ajnm.samipubco.com/article_226427.html" />
+		<meta name="citation_fulltext_html_url" content="https://ajnm.samipubco.com/article_226427.html" />
+		<meta name="citation_pdf_url" content="https://ajnm.samipubco.com/article_226427_b445b19a34b33eb3cd156f4d89e77050.pdf" />
+		<meta name="DC.Title" content="Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy" />
+		<meta name="DC.Source" content="Advanced Journal of Nanochemistry and Medicine" />
+		<meta name="DC.Date" content="27/02/2025" />
+		<meta name="DC.Date.issued" content="2025-02-27" />
+		<meta name="DC.Format" content="application/pdf" />
+		<meta name="DC.Contributor" content="Gavari-Bami, Sarah" />
+		<meta name="DC.Contributor" content="Bayramzadeh, Hedieh" />
+		<meta name="DC.Contributor" content="Yoosefian, Mehdi" />
+		<meta property="og:title" content="Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy" />
+		<meta property="og:type" content="article" />
+		<meta property="og:description" content="Romidepsin (ROM) is a cyclic peptide and FDA-approved histone deacetylase (HDAC) inhibitor with strong antitumor activity in hematological malignancies. However, its clinical application in solid tumors is limited due to poor aqueous solubility, rapid systemic clearance, and unfavorable bio-distribution. We performed 200-nanosecond all-atom molecular dynamics (MD) simulations under physiologically relevant conditions to investigate the ROM interaction with a hydroxyl- and carboxyl-functionalized graphene oxide (GRP) nanosheet. The system was analyzed using metrics including root mean square deviation (RMSD), interaction energy decomposition, hydrogen bonding, and solvent-accessible surface area (SASA). ROM exhibited rapid and stable adsorption onto the GRP surface, primarily driven by van der Waals and π–π stacking interactions, with further stabilization via hydrogen bonding. ROM molecules formed stable, multilayered aggregates on GRP without significant structural disruption, maintaining close surface contact throughout the trajectory. SASA analysis showed increased aqueous exposure and dispersibility of the ROM–GRP complex relative to GRP alone. The results demonstrate the high-affinity, stable loading of ROM onto functionalized GRP, providing atomistic insights into the encapsulation and solubilization mechanism. These findings provide a theoretical framework for the development of GRP-based nanocarriers to improve ROM delivery in solid tumor therapy and support further in vitro and in vivo validation of this nanoplatform for biomedical applications." />
+		<meta property="og:url" content="https://ajnm.samipubco.com/article_226427.html" />    
+    
+    	<!-- user defined metatags-->
+    	            <link href="./themes/base/assets/css/bootstrap.min.css" rel="stylesheet" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e">
+    		<link href=" ./themes/base/front/assets/css/gfonts-OpenSans.css" rel="stylesheet" type="text/css"  nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e"/>
+                <link href="./themes/base/assets/css/font-awesome.min.css" rel="stylesheet" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e">
+        <link href="./themes/base/assets/css/select2.min.css" rel="stylesheet" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e">
+        <link href="./themes/base/assets/css/select2-bootstrap-theme.min.css" rel="stylesheet" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e">
+        
+    	<link href="./themes/theme4/front/assets/css/style.css" rel="stylesheet" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e">
+    	<link rel="alternate" type="application/rss+xml" title="RSS feed" href="./ju.rss" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e" />
+    	<link href="./data/advjnm/coversheet/stl_front.css?v=0.15" rel="stylesheet" type="text/css" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e" />
+    	<link rel="stylesheet" href="./inc/css/print.css" media="print" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e">
+    	    
+    	<!-- Feed-->
+    	<link href="./data/advjnm/coversheet/stl_front.css?v=0.88" rel="stylesheet" type="text/css" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e" />
+    	<script type="text/javascript" src="./themes/base/assets/js/app.js" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e"></script>
+    
+    
+    	<!-- Extra Style Scripts -->
+    	<link href="https://ajnm.samipubco.com/article_226427.html" rel="canonical" />    
+    	<!-- Extra Script Scripts -->
+    	    
+<script type="application/ld+json" nonce="07d4a5031ba58f09a4069289e126fe66986cd3b26a50175e">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy",
+  "description": "Romidepsin (ROM) is a cyclic peptide and FDA-approved histone deacetylase (HDAC) inhibitor with strong antitumor activity in hematological malignancies. However, its clinical application in solid tumors is limited due to poor aqueous solubility, rapid systemic clearance, and unfavorable bio-distribution. We performed 200-nanosecond all-atom molecular dynamics (MD) simulations under physiologically relevant conditions to investigate the ROM interaction with a hydroxyl- and carboxyl-functionalized graphene oxide (GRP) nanosheet. The system was analyzed using metrics including root mean square deviation (RMSD), interaction energy decomposition, hydrogen bonding, and solvent-accessible surface area (SASA). ROM exhibited rapid and stable adsorption onto the GRP surface, primarily driven by van der Waals and π–π stacking interactions, with further stabilization via hydrogen bonding. ROM molecules formed stable, multilayered aggregates on GRP without significant structural disruption, maintaining close surface contact throughout the trajectory. SASA analysis showed increased aqueous exposure and dispersibility of the ROM–GRP complex relative to GRP alone. The results demonstrate the high-affinity, stable loading of ROM onto functionalized GRP, providing atomistic insights into the encapsulation and solubilization mechanism. These findings provide a theoretical framework for the development of GRP-based nanocarriers to improve ROM delivery in solid tumor therapy and support further in vitro and in vivo validation of this nanoplatform for biomedical applications.",
+  "author":[{"@type":"Person","name":"Sarah Gavari-Bami","url":"https:\/\/orcid.org\/0009-0007-0068-8000"},{"@type":"Person","name":"Hedieh Bayramzadeh","url":"https:\/\/orcid.org\/0009-0004-6432-3930"},{"@type":"Person","name":"Mehdi Yoosefian","url":"https:\/\/orcid.org\/0000-0003-0096-5083"}],
+"headline":"Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy",
+      "datePublished": "2025-02-27T00:00:00+00:00",
+      "dateModified": "2025-09-13T15:00:30+00:00",
+      "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ajnm.samipubco.com/article_226427.html"
+  }
+}
+</script>    
+	    </head>
+
+	<body dir="ltr"  >
+
+	<section id="topbar" class="pt-1">
+		<div class="container-fluid">
+  		<div class="row mb-1">
+			<div class="col-md-5">
+							</div>
+  			<div class="col-md-7 col-sm-7">
+				<ul class="list-inline d-flex my-0 justify-content-end">
+									<li class="list-item border-0 px-0 bg-light"><a class="btn btn-outline-secondary btn-sm btn-link border-0 badge py-2 pe-3 rounded-1" href="./contacts"><i class="fa-regular fa-circle-user"></i> Login</a></li>
+					<li class="list-item ms-2 border-0 px-0 bg-light"><a class="btn btn-outline-secondary btn-sm btn-link border-0 badge py-2 pe-3 rounded-1" href="./contacts?_action=signup"> Register</a></li>
+													
+				
+				</ul>
+			</div>
+		</div>
+		</div>
+	</section>	
+	<header class="mb-3">	
+	<div class="brandBar py-1">
+		<div class="container-fluid border-primary position-relative">
+			<div class="row my-2">
+    			<div class="col-md-8 col-sm-8">
+    				<table>
+    				<tr>
+        				<td><a href="./" class="hdr_logo"><img class="logo me-2 img-fluid" src="./data/advjnm/coversheet/logo_en.png" onerror="this.style.display='none'"></a></td>
+        				<td class="ps-2"><a href="./" class="hdr_tttl"><h1 id="ju_header_title_m" class="lh-sm d-inline">Advanced Journal of Nanochemistry and Medicine</h1></a></td>
+        			</tr>
+        			</table>
+    			</div>
+        		<div class="col-md-4 col-sm-4 mt-auto">
+        			<div class=" d-flex align-items-bottom float-end" id="ReleasePeriod"><div class='row'>
+<div class="col-md-5" style="text-align:center">8<br/>h.index</div>
+<div class="col-md-7" style="text-align:center">7<br/>i10-index</div></div>
+        		</div>	
+    		</div>
+		</div>
+	</div>
+	</header>
+
+<div id="generalPage" class="container-fluid">
+    <div class="row equal">
+            <div class="pageContent">
+                <!-- bread breadcrumb -->
+<nav aria-label="breadcrumb mb-3">
+  <ol class="breadcrumb d-none d-md-flex">
+    <li class="breadcrumb-item"><a href="./" class="">Home</a></li>
+		 <li class="breadcrumb-item active" aria-current="page">
+	Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy	</li>
+</ol>
+</nav>                <div class="row flex-column flex-sm-row">
+                <div class="col-md-9 col-sm-12 col-xs-12 order-md-2 pb-5">
+                    <div class="row">
+                        <!-- CENTER -->
+                        <div class="col-lg-9 col-md-9 col-sm-8" id="dv_artcl">
+                            <!-- Current Issue -->
+                            <div>
+                            <h1 class="mb-2 text-break fs-5 text-justify " dir="ltr"><span class="article_title fw-bold"> <a href="./article_226427_b445b19a34b33eb3cd156f4d89e77050.pdf" target="_blank">Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy</a></span></h1>
+                                <div>
+                                                
+                                                
+                                        <div class="mb-1">
+                                                                                    </div>
+            
+                                                                                    <p class="mb-1">Document Type : Original Article</p>
+                                                    
+                                                
+                                                                            <p class="p-1"><strong>Authors</strong></p>
+            
+                                        <div class="mb-2 " dir="ltr">
+                                                                                            <div class="me-3 d-inline">
+                                                    <a href="./?_action=article&amp;au=1644336&amp;_au=Sarah++Gavari-Bami">Sarah  Gavari-Bami</a>
+            
+                                                                                                            <sup class="ltr"><a class="" href="https://orcid.org/0009-0007-0068-8000" title="ORCID: 0009-0007-0068-8000" target="_blank"><i class="fa-brands fa-orcid fa-lg"></i></a></sup>
+                                                                
+                                                                                                            <sup><a href="#aff1" >1</a></sup>                                                                                                    </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a href="./?_action=article&amp;au=1644338&amp;_au=Hedieh++Bayramzadeh">Hedieh  Bayramzadeh</a>
+            
+                                                                                                            <sup class="ltr"><a class="" href="https://orcid.org/0009-0004-6432-3930" title="ORCID: 0009-0004-6432-3930" target="_blank"><i class="fa-brands fa-orcid fa-lg"></i></a></sup>
+                                                                
+                                                                                                            <sup><a href="#aff2" >2</a></sup>                                                                                                    </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a href="./?_action=article&amp;au=1644142&amp;_au=Mehdi++Yoosefian">Mehdi  Yoosefian</a>
+            
+                                                                                                            <sup><a href="/cdn-cgi/l/email-protection#c9a4b0a6a6baacafa0a8a7fe89aea4a8a0a5e7aaa6a4" title="Email to Corresponding Author"><i class="fa-regular fa-envelope" ></i></a></sup>
+                                                                                                            <sup class="ltr"><a class="" href="https://orcid.org/0000-0003-0096-5083" title="ORCID: 0000-0003-0096-5083" target="_blank"><i class="fa-brands fa-orcid fa-lg"></i></a></sup>
+                                                                
+                                                                                                            <sup><a href="#aff1" >1</a></sup><sup><a href="#aff2" >, 2</a></sup>                                                                                                    </div>
+                                                                                    </div>
+            
+                                                                                    <p class="mb-1 " dir="ltr" id="aff1">
+                                                                                                    <sup>1</sup>
+                                                                                                Department of Nanotechnology, Graduate University of Advanced Technology, Kerman, Iran                                            </p>
+                                                                                    <p class="mb-1 " dir="ltr" id="aff2">
+                                                                                                    <sup>2</sup>
+                                                                                                Department of Chemisry, Graduate University of Advanced Technology, Kerman, Iran                                            </p>
+                                                    
+                                                                                                                <div class="mb-1 " dir="ltr" id="ar_doi" title="DOI"><i class="ai ai-doi text-warning fa-lg me-1"></i> <span dir="ltr"><a href="https://doi.org/10.48309/ajnm.2025.226427">https://doi.org/10.48309/ajnm.2025.226427</a></span></div>
+                                                
+                                                
+                                        <div id="dv_ar_abs_lbl"><strong>Abstract</strong></div>
+                                        <div id="dv_ar_abs" class="padding_abstract text-break text-justify border-start border-3 p-3 my-2 " dir="ltr">Romidepsin (ROM) is a cyclic peptide and FDA-approved histone deacetylase (HDAC) inhibitor with strong antitumor activity in hematological malignancies. However, its clinical application in solid tumors is limited due to poor aqueous solubility, rapid systemic clearance, and unfavorable bio-distribution. We performed 200-nanosecond all-atom molecular dynamics (MD) simulations under physiologically relevant conditions to investigate the ROM interaction with a hydroxyl- and carboxyl-functionalized graphene oxide (GRP) nanosheet. The system was analyzed using metrics including root mean square deviation (RMSD), interaction energy decomposition, hydrogen bonding, and solvent-accessible surface area (SASA). ROM exhibited rapid and stable adsorption onto the GRP surface, primarily driven by van der Waals and &pi;&ndash;&pi; stacking interactions, with further stabilization via hydrogen bonding. ROM molecules formed stable, multilayered aggregates on GRP without significant structural disruption, maintaining close surface contact throughout the trajectory. SASA analysis showed increased aqueous exposure and dispersibility of the ROM&ndash;GRP complex relative to GRP alone. The results demonstrate the high-affinity, stable loading of ROM onto functionalized GRP, providing atomistic insights into the encapsulation and solubilization mechanism. These findings provide a theoretical framework for the development of GRP-based nanocarriers to improve ROM delivery in solid tumor therapy and support further in vitro and in vivo validation of this nanoplatform for biomedical applications.</div>
+            
+                                                
+                                                                                                                        <p class="p-1"><strong>Graphical Abstract</strong></p>
+                                                                                <div class="text-center"><a class="js_click pointer_cursor" data-handler="loadModal" data-param_a="Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy" data-param_b="data/advjnm/coversheet/911754211618.jpg"><img alt="Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy " src="data/advjnm/coversheet/911754211618.jpg" class="gr_abs_img img-fluid"/></a></div>
+                                                
+                                                
+                                                                            <p class="p-1"><strong>Keywords</strong></p>
+            
+                                        <div class="mb-2 " dir="ltr">
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=609969&amp;_kw=Romidepsin" >Romidepsin</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=28084&amp;_kw=Graphene+oxide" >Graphene oxide</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=12000&amp;_kw=Molecular+dynamics+simulation" >Molecular dynamics simulation</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=20368&amp;_kw=Drug+delivery" >Drug delivery</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=69336&amp;_kw=Histone+deacetylase+inhibitor" >Histone deacetylase inhibitor</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=407357&amp;_kw=Nanocarrier" >Nanocarrier</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=369517&amp;_kw=Adsorption+behavior" >Adsorption behavior</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=611611&amp;_kw=Solid+tumor+therapy" >Solid tumor therapy</a>
+                                                </div>
+                                                                                    </div>
+                                                
+                                                                        <div class="pt-1"><strong>Subjects</strong></div>
+        
+                                    <ul class="block list-inline list-inline-seprator mb-2">
+                                                                                    <li class="px-2 pb-1">
+                                                <a href="./?_action=article&amp;sb=12166&amp;_sb=Chemistry+of+Nanomaterials" >Chemistry of Nanomaterials</a>
+                                            </li>
+                                                                            </ul>
+                                                                    </div>
+            
+                                <hr>
+            
+                                            
+                                            
+                                            
+                                                                                                                                            						<div><p style="text-align: justify;"><strong>OPEN ACCESS</strong></p>
+<p style="text-align: justify;">&copy;2025 The author(s). This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article&rsquo;s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article&rsquo;s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit:&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a></p>
+<p style="text-align: justify;"><strong>PUBLISHER NOTE</strong></p>
+<p style="text-align: justify;">Sami Publishing Company remains neutral concerning jurisdictional claims in published maps and institutional affiliations.</p>
+<p style="text-align: justify;"><strong>CURRENT PUBLISHER</strong></p>
+<p style="text-align: justify;"><a href="http://www.samipubco.com/">Sami Publishing Company</a></p></div>
+                    			    
+            
+                                                                	<div class="page_break"></div>
+                                	<div>
+                                    <button class="btn pe-3 fw-bold fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneRef" aria-expanded="false" aria-controls="collapseOneRef"><i class="fa-solid expand_ico fa-plus fw-bolder me-1"></i> References</button>
+                                    <div class="collapse mt-1" id="collapseOneRef">
+                                      <div class="card card-body border-0 px-0 text-break text-justify">
+                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[1] QL. Song, B. Q. Guo, W. Zhang, P. Lan, P.-H. Sun, W.-M. Chen, Design, synthesis and antibacterial activity of novel ketolides bearing an aryltetrazolyl-substituted alkyl side chain, <em>The Journal of Antibiotics</em>, <strong>2011</strong>, <em>64, </em>571&ndash;581. [<a href="https://doi.org/10.1038/ja.2011.50">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=K.M.+VanderMolen%2C+W.+McCulloch%2C+C.J.+Pearce%2C+N.H.+Oberlies%2C+Romidepsin+%28Istodax%2C+NSC+630176%2C+FR901228%2C+FK228%2C+depsipeptide%29%3A+a+natural+product+recently+approved+for+cutaneous+T-cell+lymphoma%2C+The+Journal+of+Antibiotics%2C+2011%2C+64%288%29%2C+525%E2%80%93531.+https%3A%2F%2Fdoi.org%2F10.1038%2Fja.2011.50&amp;btnG=">Google Scholar</a>], [<a href="https://www.nature.com/articles/ja201150">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[2] A. Petrich, C. Nabhan, Use of class I histone deacetylase inhibitor romidepsin in combination regimens, <em>Leukemia &amp; lymphoma</em>, <strong>2016</strong>, <em>57, </em>1755&ndash;1765. [<a href="https://doi.org/10.3109/10428194.2016.1160082">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=A.+Petrich%2C+C.+Nabhan%2C+Use+of+class+I+histone+deacetylase+inhibitor+romidepsin+in+combination+regimens%2C+Leukemia+%26+Lymphoma%2C+2016%2C+57%288%29%2C+1755%E2%80%931765.+https%3A%2F%2Fdoi.org%2F10.3109%2F10428194.2016.1160082&amp;btnG=">Google Scholar</a>], [<a href="https://www.tandfonline.com/doi/full/10.3109/10428194.2016.1160082">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[3] N. El Omari, L.-H. Lee, S. Bakrim, H.A. Makeen, H.A. Alhazmi, S. Mohan, A. Khalid, L.C. Ming, A. Bouyahya, Molecular mechanistic pathways underlying the anticancer therapeutic efficiency of romidepsin, <em>Biomedicine &amp; Pharmacotherapy</em>, <strong>2023</strong>, <em>164, </em>114774. [<a href="https://doi.org/10.1016/j.biopha.2023.114774">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=%5D+++++++N.+El+Omari%2C+R.+Berrada%2C+M.+Cherkaoui-Tangi%2C+M.+Moubtakir%2C+M.+El+Hiba%2C+A.+El+Jaoudi%2C+M.+Ouhssine%2C+Molecular+mechanistic+pathways+underlying+the+anticancer+therapeutic+efficiency+of+romidepsin%2C+Biomedicine+%26+Pharmacotherapy%2C+2023%2C+164%2C+114774.&amp;btnG=">Google Scholar</a>], [<a href="https://www.sciencedirect.com/science/article/pii/S0753332223005632">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[4]&nbsp;&nbsp;&nbsp;&nbsp; C. Grant, F. Rahman, R. Piekarz, C. Peer, R. Frye, R.W. Robey, E.R. Gardner, W.D. Figg, S.E. Bates, Romidepsin: a new therapy for cutaneous T-cell lymphoma and a potential therapy for solid tumors, <em>Expert Review of Anticancer Therapy</em>, <strong>2010</strong>, <em>10, </em>997&ndash;1008. [<a href="https://doi.org/10.1586/era.10.88">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=C.+Grant%2C+D.+Rahman%2C+A.+Piekarz%2C+S.+Peer%2C+S.+Frye%2C+S.+Bates%2C+Romidepsin%3A+a+new+therapy+for+cutaneous+T-cell+lymphoma+and+a+potential+therapy+for+solid+tumors%2C+Expert+Review+of+Anticancer+Therapy%2C+2010%2C+10%287%29%2C+997%E2%80%931008.+https%3A%2F%2Fdoi.org%2F10.1586%2Fera.10.88&amp;btnG=">Google Scholar</a>], [<a href="https://www.tandfonline.com/doi/abs/10.1586/era.10.88">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[5] S. Shimony, N. Horowitz, E. Ribakovsky, U. Rozovski, A. Avigdor, K. Zloto, T. Berger, I. Avivi, C. Perry, U. Abadi, Romidepsin treatment for relapsed or refractory peripheral and cutaneous T‐cell lymphoma: Real‐life data from a national multicenter observational study, <em>Hematological Oncology</em>, <strong>2019</strong>, <em>37, </em>569&ndash;577. [<a href="https://doi.org/10.1002/hon.2691">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=S.+Shimony%2C+R.+Aviv%2C+O.+Pasvolsky%2C+A.+Benyamini%2C+T.+Efrati%2C+Y.+Bairey%2C+I.+Landau%2C+A.+Bakis%2C+I.+Yerushalmi%2C+R.+Nagler%2C+Romidepsin+treatment+for+relapsed+or+refractory+peripheral+and+cutaneous+T%E2%80%90cell+lymphoma%3A+real%E2%80%90life+data+from+a+national+multicenter+observational+study%2C+Hematological+Oncology%2C+2019%2C+37%285%29%2C+569%E2%80%93577.https%3A%2F%2Fdoi.org%2F10.1002%2Fhon.2691&amp;btnG=">Google Scholar</a>], [<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hon.2691">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[6] S.J. Whittaker, M.F. Demierre, E.J. Kim, A.H. Rook, A. Lerner, M. Duvic, J. Scarisbrick, S. Reddy, T. Robak, J.C. Becker, Final results from a multicenter, international, pivotal study of romidepsin in refractory cutaneous T-cell lymphoma, <em>Journal of Clinical Oncology</em>, <strong>2010</strong>, <em>28, </em>4485&ndash;4491. [<a href="https://doi.org/10.1200/JCO.2010.28.9066">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=%5B6%5D+++++S.J.+Whittaker%2C+E.D.+Demierre%2C+Y.+Kim%2C+A.+Rook%2C+S.+Lerner%2C+A.+Duvic%2C+E.P.+Witzig%2C+E.+Zinzani%2C+M.+Horwitz%2C+Final+results+from+a+multicenter%2C+international%2C+pivotal+study+of+romidepsin+in+refractory+cutaneous+T-cell+lymphoma%2C+Journal+of+Clinical+Oncology%2C+2010%2C+28%2829%29%2C+4485%E2%80%934491.+https%3A%2F%2Fdoi.org%2F10.1200%2FJCO.2010.28.9066&amp;btnG=">Google Scholar</a>], [<a href="https://ascopubs.org/doi/full/10.1200/JCO.2010.28.9066">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[7] Y. Li, E. Seto, HDACs and HDAC inhibitors in cancer development and therapy, <em>Cold Spring Harbor Perspectives in Medicine</em>, <strong>2016</strong>, <em>6, </em>a026831. [<a href="https://doi.org/10.1101/cshperspect.a026831">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Y.+Li%2C+E.+Seto%2C+HDACs+and+HDAC+inhibitors+in+cancer+development+and+therapy%2C+Cold+Spring+Harbor+Perspectives+in+Medicine%2C+2016%2C+6%2810%29%2C+a026831.+https%3A%2F%2Fdoi.org%2F10.1101%2Fcshperspect.a026831&amp;btnG=">Google Scholar</a>], [<a href="https://perspectivesinmedicine.cshlp.org/content/6/10/a026831.short">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[8] B. Coiffier, B. Pro, H.M. Prince, F. Foss, L. Sokol, M. Greenwood, D. Caballero, F. Morschhauser, M. Wilhelm, L. Pinter-Brown, Romidepsin for the treatment of relapsed/refractory peripheral T-cell lymphoma: pivotal study update demonstrates durable responses, <em>Journal of Hematology &amp; Oncology</em>, <strong>2014</strong>, <em>7, </em>11. [<a href="https://doi.org/10.1186/1756-8722-7-11">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=B.+Coiffier%2C+E.+Pro%2C+M.+Frederico%2C+S.+Caballero%2C+J.+Morschhauser%2C+P.+Bird%2C+E.+Pezzella%2C+T.+Illidge%2C+A.+Belada%2C+S.+Kiesewetter%2C+Romidepsin+for+the+treatment+of+relapsed%2Frefractory+peripheral+T-cell+lymphoma%3A+pivotal+study+update+demonstrates+durable+responses%2C+Journal+of+Hematology+%26+Oncology%2C+2014%2C+7%2C+11.+https%3A%2F%2Fdoi.org%2F10.1186%2F1756-8722-7-11&amp;btnG=">Google Scholar</a>], [<a href="https://link.springer.com/article/10.1186/1756-8722-7-11">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[9] R.M. Connolly, E. Laille, U. Vaishampayan, V. Chung, K. Kelly, A. Dowlati, O.B. Alese, R.D. Harvey, P. Haluska, L.L. Siu, Phase I and pharmacokinetic study of romidepsin in patients with cancer and hepatic dysfunction: A national cancer institute organ dysfunction working group study, <em>Clinical Cancer Research</em>, <strong>2020</strong>, <em>26, </em>5329&ndash;5337. [<a href="https://doi.org/10.1158/1078-0432.CCR-20-1412">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=R.M.+Connolly%2C+E.K.+Dooley%2C+A.+Rudek%2C+S.M.+Gore%2C+M.+Latham%2C+M.+Wright%2C+R.J.+Kinders%2C+D.+Tomaszewski%2C+A.J.+Murgo%2C+R.+Piekarz%2C+Phase+I+and+pharmacokinetic+study+of+romidepsin+in+patients+with+cancer+and+hepatic+dysfunction%3A+a+National+Cancer+Institute+Organ+Dysfunction+Working+Group+study%2C+Clinical+Cancer+Research%2C+2020%2C+26%2820%29%2C+5329%E2%80%935337.+https%3A%2F%2Fdoi.org%2F10.1158%2F1078-0432.CCR-20-1412&amp;btnG=">Google Scholar</a>], [<a href="https://aacrjournals.org/clincancerres/article-abstract/26/20/5329/82821/Phase-I-and-Pharmacokinetic-Study-of-Romidepsin-in">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[10] H. Patel, J. Li, L. Bo, R. Mehta, C.R. Ashby Jr, S. Wang, W. Cai, Z.-S. Chen, Nanotechnology-based delivery systems to overcome drug resistance in cancer, <em>Medical Review</em>, <strong>2024</strong>, <em>4, </em>5&ndash;30. [<a href="https://doi.org/10.1515/mr-2023-0058">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=%5D+++++++H.+Patel%2C+R.+Shah%2C+M.+Desai%2C+S.+Mehta%2C+A.+Sharma%2C+Nanotechnology-based+delivery+systems+to+overcome+drug+resistance+in+cancer%2C+Medical+Review%2C+2024%2C+4%281%29%2C+5%E2%80%9330.+https%3A%2F%2Fdoi.org%2F10.1515%2Fmr-2023-0058&amp;btnG=">Google Scholar</a>], [<a href="https://www.degruyterbrill.com/document/doi/10.1515/mr-2023-0058/html">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[11] M. Yoosefian, E. Rahmanifar, N. Etminan, Nanocarrier for levodopa Parkinson therapeutic drug; comprehensive benserazide analysis, <em>Artificial Cells, Nanomedicine, and Biotechnology</em>, <strong>2018</strong>, <em>46, </em>434&ndash;446. [<a href="https://doi.org/10.1080/21691401.2018.1430583">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=M.+Yoosefian%2C+E.+Rahmanifar%2C+N.+Etminan%2C+Nanocarrier+for+levodopa+Parkinson+therapeutic+drug%3B+comprehensive+benserazide+analysis%2C+Artificial+Cells%2C+Nanomedicine%2C+and+Biotechnology%2C+2018%2C+46%28sup1%29%2C+434%E2%80%93446.+https%3A%2F%2Fdoi.org%2F10.1080%2F21691401.2018.1430583&amp;btnG=">Google Scholar</a>], [<a href="https://www.tandfonline.com/doi/full/10.1080/21691401.2018.1430583">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[12] M. Yoosefian, S. Sabaei, N. Etminan, Encapsulation efficiency of single-walled carbon nanotube for Ifosfamide anti-cancer drug, <em>Computers in Biology and Medicine</em>, <strong>2019</strong>, <em>114, </em>103433. [<a href="https://doi.org/10.1016/j.compbiomed.2019.103433">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=M.+Yoosefian%2C+S.+Sabaei%2C+N.+Etminan%2C+Encapsulation+efficiency+of+single-walled+carbon+nanotube+for+Ifosfamide+anti-cancer+drug%2C+Computers+in+Biology+and+Medicine%2C+2019%2C+114%2C+103433.+https%3A%2F%2Fdoi.org%2F10.1016%2Fj.compbiomed.2019.103433&amp;btnG=">Google Scholar</a>], [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0010482519303105">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[13] J. Liao, L. Fan, Y. Li, Q.Q. Xu, L.Y. Xiong, S.S. Zhang, J.H. Liu, Z.C. Xiao, C. Zhang, J. Yang, Recent advances in biomimetic nanodelivery systems: new brain-targeting strategies, <em>Journal of Controlled Release</em>, <strong>2023</strong>, <em>358, </em>439&ndash;464. [<a href="https://doi.org/10.1016/j.jconrel.2023.05.009">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=J.+Liao%2C+Y.+Li%2C+X.+Zhang%2C+H.+Liu%2C+S.+Wang%2C+Y.+Chen%2C+Recent+advances+in+biomimetic+nanodelivery+systems%3A+new+brain-targeting+strategies%2C+Journal+of+Controlled+Release%2C+2023%2C+358%2C+439%E2%80%93464.+https%3A%2F%2Fdoi.org%2F10.1016%2Fj.jconrel.2023.05.009&amp;btnG=">Google Scholar</a>], [<a href="https://www.sciencedirect.com/science/article/pii/S016836592300322X">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[14] D. Peer, J.M. Karp, S. Hong, O.C. Farokhzad, R. Margalit, R. Langer, Nanocarriers as an emerging platform for cancer therapy, <em>Nano-Enabled Medical Applications</em>, <strong>2020</strong>, 61&ndash;91. [<a href="https://doi.org/10.1038/nnano.2007.387">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=D.+Peer%2C+J.M.+Karp%2C+S.+Hong%2C+O.C.+Farokhzad%2C+R.+Margalit%2C+R.+Langer%2C+Nanocarriers+as+an+emerging+platform+for+cancer+therapy%2C+Nano-enabled+Medical+Applications%2C+2020%2C+61%E2%80%9391.+https%3A%2F%2Fdoi.org%2F10.1038%2Fnnano.2007.387&amp;btnG=">Google Scholar</a>], [<a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9780429399039-2/nanocarriers-emerging-platform-cancer-therapy-dan-peer-jeffrey-karp-seungpyo-hong-omid-farokhzad-rimona-margalit-robert-langer">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[15] H. Sharma, S. Mondal, Functionalized graphene oxide for chemotherapeutic drug delivery and cancer treatment: A promising material in nanomedicine, <em>International Journal of Molecular Sciences</em>, <strong>2020</strong>, <em>21, </em>6280. [<a href="https://doi.org/10.3390/ijms21176280">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=H.+Sharma%2C+S.+Mondal%2C+Functionalized+graphene+oxide+for+chemotherapeutic+drug+delivery+and+cancer+treatment%3A+a+promising+material+in+nanomedicine%2C+International+Journal+of+Molecular+Sciences%2C+2020%2C+21%2817%29%2C+6280.+https%3A%2F%2Fdoi.org%2F10.3390%2Fijms21176280&amp;btnG=">Google Scholar</a>], [<a href="https://www.mdpi.com/1422-0067/21/17/6280">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[16] R. Liao, Y. Zhang, W. Mao, Functionalized graphene oxide NPs as a nanocarrier for drug delivery system in quercetin/lurbinectedin as dual sensitive therapeutics for A549 lung cancer treatment, <em>Heliyon</em>, <strong>2024</strong>, <em>10, </em>[<a href="https://doi.org/10.1016/j.heliyon.2024.e31212">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=%5D+++++R.+Liao%2C+Y.+Zhang%2C+W.+Mao%2C+Functionalized+graphene+oxide+NPs+as+a+nanocarrier+for+drug+delivery+system+in+quercetin%2Flurbinectedin+as+dual+sensitive+therapeutics+for+A549+lung+cancer+treatment%2C+Heliyon%2C+2024%2C+10%2811%29%2C+e25843.+https%3A%2F%2Fdoi.org%2F10.1016%2Fj.heliyon.2024.e31212&amp;btnG=">Google Scholar</a>], [<a href="https://www.cell.com/heliyon/fulltext/S2405-8440(24)07243-8?uuid=uuid%3A5a8d2c80-7be2-4881-b3bc-fe5641420c6a">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[17] S. Sattari, M. Adeli, S. Beyranvand, M. Nemati, Functionalized graphene platforms for anticancer drug delivery, <em>International Journal of Nanomedicine</em>, <strong>2021</strong>, 5955&ndash;5980. [<a href="https://doi.org/10.2147/IJN.S249712">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=S.+Sattari%2C+M.+Dadashpour%2C+M.+Hasanzadeh%2C+A.+Behnam%2C+M.+Zarghami%2C+Functionalized+graphene+platforms+for+anticancer+drug+delivery%2C+International+Journal+of+Nanomedicine%2C+2021%2C+16%2C+5955%E2%80%935980.+https%3A%2F%2Fdoi.org%2F10.2147%2FIJN.S249712&amp;btnG=">Google Scholar</a>], [<a href="https://www.tandfonline.com/doi/abs/10.2147/IJN.S249712">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[18] F. Yaghoubi, N.S.H. Motlagh, S.M. Naghib, F. Haghiralsadat, H.Z. Jaliani, A. Moradi, A functionalized graphene oxide with improved cytocompatibility for stimuli-responsive co-delivery of curcumin and doxorubicin in cancer treatment, <em>Scientific Reports</em>, <strong>2022</strong>, <em>12, </em>1959. [<a href="https://doi.org/10.1038/s41598-022-05793-9">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=F.+Yaghoubi%2C+A.+Kasaeian%2C+S.+Akbari%2C+M.+Hashemi%2C+M.+Javadzadeh+Yaghoubi%2C+A.+Haghiralsadat%2C+A+functionalized+graphene+oxide+with+improved+cytocompatibility+for+stimuli-responsive+co-delivery+of+curcumin+and+doxorubicin+in+cancer+treatment%2C+Scientific+Reports%2C+2022%2C+12%281%29%2C+1959.+https%3A%2F%2Fdoi.org%2F10.1038%2Fs41598-022-05793-9&amp;btnG=">Google Scholar</a>], [<a href="https://www.nature.com/articles/s41598-022-05793-9">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[19] N. Karki, H. Tiwari, M. Pal, A. Chaurasia, R. Bal, P. Joshi, N.G. Sahoo, Functionalized graphene oxides for drug loading, release and delivery of poorly water soluble anticancer drug: A comparative study, <em>Colloids and Surfaces B: Biointerfaces</em>, <strong>2018</strong>, <em>169, </em>265&ndash;272. [<a href="https://doi.org/10.1016/j.colsurfb.2018.05.022">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=N.+Karki%2C+K.+Tiwari%2C+A.+Joshi%2C+S.+Sharma%2C+P.+Adhikari%2C+Functionalized+graphene+oxides+for+drug+loading%2C+release+and+delivery+of+poorly+water+soluble+anticancer+drug%3A+a+comparative+study%2C+Colloids+and+Surfaces+B%3A+Biointerfaces%2C+2018%2C+169%2C+265%E2%80%93272.+https%3A%2F%2Fdoi.org%2F10.1016%2Fj.colsurfb.2018.05.022&amp;btnG=">Google Scholar</a>], [<a href="https://www.sciencedirect.com/science/article/pii/S0927776518302959">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[20] G. Frigerio, S. Motta, P. Siani, E. Donadoni, C. Di Valentin, Unveiling the drug delivery mechanism of graphene oxide dots at the atomic scale, <em>Journal of Controlled Release</em>, <strong>2025</strong>, <em>379, </em>344&ndash;362. [<a href="https://doi.org/10.1016/j.jconrel.2025.01.020">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=G.+Frigerio%2C+L.+Conti%2C+M.+Raniolo%2C+A.+Di+Falco%2C+F.+Alfei%2C+F.+Corsi%2C+M.+Morbidelli%2C+G.+Ferraretto%2C+F.+Re%2C+Unveiling+the+drug+delivery+mechanism+of+graphene+oxide+dots+at+the+atomic+scale%2C+Journal+of+Controlled+Release%2C+2025%2C+379%2C+344%E2%80%93362.+https%3A%2F%2Fdoi.org%2F10.1016%2Fj.jconrel.2025.01.020&amp;btnG=">Google Scholar</a>], [<a href="https://www.sciencedirect.com/science/article/pii/S0168365925000227">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[21] N. Keklikcioglu Cakmak, A. Eroglu, Doxorubicin and tamoxifen loaded graphene oxide nanoparticle functionalized with chitosan and folic acid for anticancer drug delivery, <em>Polymer Bulletin</em>, <strong>2023</strong>, <em>80, </em>2171&ndash;2185. [<a href="https://doi.org/10.1007/s00289-022-04549-9">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=N.+Keklikcioglu+Cakmak%2C+A.+Eroglu%2C+Doxorubicin+and+tamoxifen+loaded+graphene+oxide+nanoparticle+functionalized+with+chitosan+and+folic+acid+for+anticancer+drug+delivery%2C+Polymer+Bulletin%2C+2023%2C+80%282%29%2C+2171%E2%80%932185.+https%3A%2F%2Fdoi.org%2F10.1007%2Fs00289-022-04549-9&amp;btnG=">Google Scholar</a>], [<a href="https://link.springer.com/article/10.1007/s00289-022-04549-9">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[22] S. Kumari, A. Nehra, K. Gupta, A. Puri, V. Kumar, K.P. Singh, M. Kumar, A. Sharma, Chlorambucil-loaded graphene-oxide-based nano-vesicles for cancer therapy, <em>Pharmaceutics</em>, <strong>2023</strong>, <em>15, </em>649. [<a href="https://doi.org/10.3390/pharmaceutics15020649">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=S.+Kumari%2C+R.+Sharma%2C+A.+Yadav%2C+M.+Singh%2C+P.+Rani%2C+A.+Chauhan%2C+Chlorambucil-loaded+graphene-oxide-based+nano-vesicles+for+cancer+therapy%2C+Pharmaceutics%2C+2023%2C+15%282%29%2C+649.+https%3A%2F%2Fdoi.org%2F10.3390%2Fpharmaceutics15020649&amp;btnG=">Google Scholar</a>], [<a href="https://www.mdpi.com/1999-4923/15/2/649">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[23] A. Esmaeili, M. Yoosefian, M. Mahani, Molecular Dynamics simulation of lenalidomide interaction with cRBN Protein: a target for immunomodulatory Drugs, <em>South African Journal of Chemistry</em>, <strong>2023</strong>, <em>77, </em>157&ndash;162. [<a href="https://doi.org/10.17159/0379-4350/2023/v77a20">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=%5D+++++A.+Esmaeili%2C+M.+Yoosefian%2C+M.+Mahani%2C+Molecular+Dynamics+simulation+of+lenalidomide+interaction+with+cRBN+Protein%3A+a+target+for+immunomodulatory+drugs%2C+South+African+Journal+of+Chemistry%2C+2023%2C+77%2C+157%E2%80%93162.+https%3A%2F%2Fdoi.org%2F10.17159%2F0379-4350%2F2023%2Fv77a20&amp;btnG=">Google Scholar</a>], [<a href="https://www.scielo.org.za/scielo.php?pid=S0379-43502023000100020&amp;script=sci_arttext">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[24] S.A. Hollingsworth, R.O. Dror, Molecular dynamics simulation for all, <em>Neuron</em>, <strong>2018</strong>, <em>99, </em>1129&ndash;1143. [<a href="https://doi.org/10.1016/j.neuron.2018.08.011">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=S.A.+Hollingsworth%2C+R.O.+Dror%2C+Molecular+dynamics+simulation+for+all%2C+Neuron%2C+2018%2C+99%286%29%2C+1129%E2%80%931143.+https%3A%2F%2Fdoi.org%2F10.1016%2Fj.neuron.2018.08.011&amp;btnG=">Google Scholar</a>], [<a href="https://www.cell.com/neuron/fulltext/S0896-6273(18)30684-6">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[25] K. Carthigayan, S. Xavier, S. Periandy, HOMO&ndash;LUMO, UV, NLO, NMR and vibrational analysis of 3-methyl-1-phenylpyrazole using FT-IR, FT-RAMAN FT-NMR spectra and HF-DFT computational methods, <em>Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy</em>, <strong>2015</strong>, <em>142, </em>350&ndash;363. [<a href="https://dx.doi.org/10.1016/j.saa.2015.02.035">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=K.+Carthigayan%2C+S.+Xavier%2C+S.+Periandy%2C+HOMO%E2%80%93LUMO%2C+UV%2C+NLO%2C+NMR+and+vibrational+analysis+of+3-methyl-1-phenylpyrazole+using+FT-IR%2C+FT-RAMAN%2C+FT-NMR+spectra+and+HF-DFT+computational+methods%2C+Spectrochimica+Acta+Part+A%3A+Molecular+and+Biomolecular+Spectroscopy%2C+2015%2C+142%2C+350%E2%80%93363.+http%3A%2F%2Fdx.doi.org%2F10.1016%2Fj.saa.2015.02.035&amp;btnG=">Google Scholar</a>], [<a href="https://www.sciencedirect.com/science/article/pii/S1386142515001870">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[26] P. Smardz, M.M. Anila, P. Rogowski, M.S. Li, B. R&oacute;życki, P. Krupa, A practical guide to all-atom and coarse-grained molecular dynamics simulations using amber and gromacs: A case study of disulfide-bond impact on the intrinsically disordered amyloid beta, <em>International Journal of Molecular Sciences</em>, <strong>2024</strong>, <em>25, </em>6698. [<a href="https://doi.org/10.3390/ijms25126698">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=P.+Smardz%2C+A.+Kowalczyk%2C+M.+Witkowski%2C+A.+Ejchart%2C+A.+Pozna%C5%84ski%2C+A+practical+guide+to+all-atom+and+coarse-grained+molecular+dynamics+simulations+using+AMBER+and+GROMACS%3A+a+case+study+of+disulfide-bond+impact+on+the+intrinsically+disordered+amyloid+beta%2C+International+Journal+of+Molecular+Sciences%2C+2024%2C+25%2812%29%2C+6698.+https%3A%2F%2Fdoi.org%2F10.3390%2Fijms25126698&amp;btnG=">Google Scholar</a>], [<a href="https://www.mdpi.com/1422-0067/25/12/6698">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[27] P. Larsson, R.C. Kneiszl, E.G. Marklund, MkVsites: A tool for creating GROMACS virtual sites parameters to increase performance in all‐atom molecular dynamics simulations, <em>Journal of computational chemistry</em>, <strong>2020</strong>, <em>41, </em>1564&ndash;1569. [<a href="https://doi.org/10.1002/jcc.26198">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=P.+Larsson%2C+R.C.+Kneiszl%2C+E.G.+Marklund%2C+MkVsites%3A+a+tool+for+creating+GROMACS+virtual+sites+parameters+to+increase+performance+in+all%E2%80%90atom+molecular+dynamics+simulations%2C+Journal+of+Computational+Chemistry%2C+2020%2C+41%2816%29%2C+1564%E2%80%931569.+https%3A%2F%2Fdoi.org%2F10.1002%2Fjcc.26198&amp;btnG=">Google Scholar</a>], [<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26198">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[28] P.A. Townsend, Adsorption in action: molecular dynamics as a tool to study adsorption at the surface of fine plastic particles in aquatic environments, <em>ACS Omega</em>, <strong>2024</strong>, <em>9, </em>5142&ndash;5156. [<a href="https://doi.org/10.1021/acsomega.3c07488">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=P.A.+Townsend%2C+Adsorption+in+action%3A+molecular+dynamics+as+a+tool+to+study+adsorption+at+the+surface+of+fine+plastic+particles+in+aquatic+environments%2C+ACS+Omega%2C+2024%2C+9%285%29%2C+5142%E2%80%935156.+https%3A%2F%2Fdoi.org%2F10.1021%2Facsomega.3c07488&amp;btnG=">Google Scholar</a>], [<a href="https://pubs.acs.org/doi/abs/10.1021/acsomega.3c07488">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[29] M. Kim, E. Kim, S. Lee, J.S. Kim, S. Lee, New method for constant-NPT molecular dynamics, <em>The Journal of Physical Chemistry A</em>, <strong>2019</strong>, <em>123, </em>1689&ndash;1699. [<a href="https://doi.org/10.1021/acs.jpca.8b09082">Crossref</a>], [<a href="https://scholar.google.com/scholar?q=M.+Kim,+J.+Park,+Y.+Kim,+S.+Kim,+B.+Lee,+J.+Lee,+H.M.+Lee,+New+method+for+constant-NPT+molecular+dynamics,+The+Journal+of+Physical+Chemistry+A,+2019,+123(8),+1689%E2%80%931699.+https://doi.org/10.1021/acs.jpca.8b09082&amp;hl=en&amp;as_sdt=0,5">Google Scholar</a>], [<a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.8b09082">Publisher</a>]
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify">[30] X. Cao, M.H. Hummel, Y. Wang, C. Simmerling, E.A. Coutsias, Exact analytical algorithm for the solvent-accessible surface area and derivatives in implicit solvent molecular simulations on GPUs, <em>Journal of chemical theory and computation</em>, <strong>2024</strong>, <em>20, </em>4456&ndash;4468. [<a href="https://doi.org/10.1021/acs.jctc.3c01366">Crossref</a>], [<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=%5D++++X.+Cao%2C+Y.+Liu%2C+J.+Zhang%2C+L.+Wang%2C+W.+Jiang%2C+Exact+analytical+algorithm+for+the+solvent-accessible+surface+area+and+derivatives+in+implicit+solvent+molecular+simulations+on+GPUs%2C+Journal+of+Chemical+Theory+and+Computation%2C+2024%2C+20%2811%29%2C+4456%E2%80%934468.+https%3A%2F%2Fdoi.org%2F10.1021%2Facs.jctc.3c01366&amp;btnG=">Google Scholar</a>], [<a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.3c01366">Publisher</a>]</div>                                                                                                                              </div>
+                                    </div>                	
+                                	</div>
+            
+            
+                                            
+            
+                                            
+            
+                                            
+                            </div>
+            
+            
+                        </div>
+                        <!-- /CENTER -->
+            
+                        <!-- LEFT -->
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+            
+                                                <div class="card mb-2">
+                        <div class="card-body ar_info_pnl p-2" id="ar_info_pnl_cover">
+            
+                        <div id="pnl_cover">
+                            <div class="row" >
+                                <div class="col-6">
+                            		<a class="js_click pointer_cursor" data-handler="loadModal" data-param_a="Advanced Journal of Nanochemistry and Medicine" data-param_b="./data/advjnm/coversheet/51756912604.jpg">
+                            			<img src="data/advjnm/coversheet/51756912604.jpg" alt="Advanced Journal of Nanochemistry and Medicine" class="img-fluid shadow-sm">
+                            		</a>
+                                </div>
+                                <div class="col-6">
+                                    <h6><a href="./issue_31494_31495.html">Volume 1, Issue 1</a><br/>Winter 2025<div id="sp_ar_pages">Pages <span dir="ltr">1-16</span></div></h6>
+                                    								</div>                                    
+                            </div>
+                            </div>
+            
+                         </div>
+                        </div>
+                                                    <!-- Download Files -->
+                                    
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pFiles">
+                            			<button class="accordion-button bg-light ps-2 pt-2 fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pFiles_" aria-expanded="true" aria-controls="pFiles_"><i class="fa-solid fa-file-lines me-2 mt-1"></i>Files</button>
+                            		</h2>
+                            		<div id="pFiles_" class="accordion-collapse collapse show" aria-labelledby="pFiles">
+                            			<div class="accordion-body p-2">
+            							                            	<div class="p-2" id="dv_ar_files">
+                        			                        				<div class="mb-2"><a href="./?_action=xml&amp;article=226427" target="_blank" class="tag_a pdf_link"><i class="fa fa-file-code-o text-orange fa-solid fa-code text-warning me-2" ></i> XML</a></div>
+                       				                         				<div class="mb-2"><a href="./article_226427_b445b19a34b33eb3cd156f4d89e77050.pdf" target="_blank" class="tag_a pdf_link"><i class="fa fa-file-pdf-o text-red  fa-solid fa-file-pdf text-danger me-2" ></i> PDF <span dir="ltr" class="badge bg-light px-3 text-dark">1.87 M</span></a></div>
+                       				                                 <!-- Suplement Files -->
+                           		                                    	<div class="my-4">
+                                    	                                    	<audio class="col-12" controls preload="none" title="AJNM-2507-1001.mp3">
+                                    		<source src="./data/advjnm/fulltext/226427_0_24_1755178715.mp3">
+                                    	</audio>
+                                    	                                    	<div class="text-center"><small></small></div>
+                                    	</div>
+                                                                        <div class="row">
+                                                                        </div>
+            					                    			</div>
+                			                            			
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+                                                                        
+                                                        
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pDates">
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pDates_" aria-expanded="true" aria-controls="pDates_"><i class="fa-solid fa-clock-rotate-left me-2"></i>History</button>
+                            		</h2>
+                            		<div id="pDates_" class="accordion-collapse collapse" aria-labelledby="pDates">
+                            			<div class="accordion-body p-1 px-1">
+                            			
+                                		<ul class="list-group px-0">
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Receive Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">18 January 2025</span></li>
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Revise Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">11 February 2025</span></li>
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Accept Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">20 February 2025</span></li>
+                                                                        			</ul>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>  
+                                          
+            								           		   
+            
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pShare">
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pShare_" aria-expanded="true" aria-controls="pShare_"><i class="fa-solid fa-share-nodes me-2"></i>Share</button>
+                            		</h2>
+                            		<div id="pShare_" class="accordion-collapse collapse" aria-labelledby="pShare">
+                            			<div class="accordion-body p-3">
+                			    	                				    	<div class="row">
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_xtwitter" href="https://x.com/share?url=https://ajnm.samipubco.com/article_226427.html&amp;text=Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy" target="_blank" data-bs-toggle="tooltip" title="X-Twitter">
+                							<i class="fa-brands fa-x-twitter fa-2x m-1"></i>
+                						</a>
+                						</div>
+                				    	<div class="col-3 text-center social_icon p-1">
+                						<a id="share_facebook" href="https://www.facebook.com/sharer.php?u=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Facebook">
+                							<i class="fa-brands fa-square-facebook fa-2x m-1 "></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_mendeley" href="https://www.mendeley.com/import/?url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Mendeley">
+                							<i class="fa-brands fa-mendeley fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Linkedin">
+            								<i class="fa-brands fa-linkedin fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+            							<a id="share_instagram" href="https://www.instagram.com/?url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Instagram">
+            								<i class="fa-brands fa-instagram fa-2x m-1"></i>
+            							</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_email" class="js_click pointer_cursor" data-handler="act" data-param_a="email" data-bs-toggle="tooltip" title="Email">
+                							<i class="fa-regular fa-envelope fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_print" class="js_click pointer_cursor" data-handler="printDiv" data-param_a="dv_artcl" data-bs-toggle="tooltip" title="Print">
+                							<i class="fa-solid fa-print fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                 						<a id="share_stumble" href="https://mix.com/mixit?su=submit&url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="StumbleUpon">
+                							<i class="fa-brands fa-stumbleupon-circle fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_acedemia" class="" href="https://www.academia.edu/" target="_blank" data-bs-toggle="tooltip" title="Academia">
+                							<i class="ai ai-academia fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_sems" href="https://www.semanticscholar.org/" target="_blank" data-bs-toggle="tooltip" title="Semantic scholar">
+                							<i class="ai ai-semantic-scholar fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1 d-none">
+                						<a id="share_reddit" href="https://www.reddit.com/submit?url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Reddit">
+                							<i class="fa-brands fa-square-reddit fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_rg" href="https://www.researchgate.net/" target="_blank" data-bs-toggle="tooltip" title="Research Gate">
+                							<i class="fa-brands fa-researchgate fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                 						<a id="share_blogger" href="https://www.blogger.com/blog-this.g?u=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Blogger">
+                							<i class="fa-brands fa-blogger fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_pinterest" href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Pinterest">
+                							<i class="fa-brands fa-square-pinterest fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_digg" href="https://www.digg.com/submit?https://ajnm.samipubco.com/article_226427.html&title=Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy" target="_blank" data-bs-toggle="tooltip" title="Digg">
+                							<i class="fa-brands fa-digg fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_delicious" href="https://del.icio.us/post?url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Delicious">
+                							<i class="fa-brands fa-delicious fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_skype" href="https://web.skype.com/share?url=https://ajnm.samipubco.com/article_226427.html" target="_blank" data-bs-toggle="tooltip" title="Skype">
+                							<i class="fa-brands fa-skype fa-2x m-1"></i>
+                						</a>
+                            			</div></div>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+            
+                            <!-- Cite This Article -->
+                            
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pHowCite" >
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#ppHowCite" aria-expanded="true" aria-controls="ppHowCite"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>How to cite</button>
+                            		</h2>
+                            		<div id="ppHowCite" class="accordion-collapse collapse" aria-labelledby="pHowCite">
+                            			<div class="accordion-body p-2">
+                                            <ul class="list-group p-1" dir="ltr">
+                                                <li class="list-group-item border-0"><a class="tag_a"  href="./?_action=export&rf=ris&rc=226427">RIS</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=enw&rc=226427">EndNote</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=ris&rc=226427">Mendeley</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=bibtex&rc=226427">BibTeX</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-apa">APA</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-mla">MLA</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-harvard">HARVARD</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-chicago">CHICAGO</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-vancouver">VANCOUVER</a></li>
+                                                                                            </ul>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>  
+                                          
+            
+                            <!-- Article Statastic -->
+                                                        
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pStat">
+                            			<button class="accordion-button bg-light ps-2 pt-2 fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#ppStat" aria-expanded="true" aria-controls="ppStat"><i class="fa-solid fa-chart-simple me-2"></i>Statistics</button>
+                            		</h2>
+                            		<div id="ppStat" class="accordion-collapse collapse show" aria-labelledby="pStat">
+                            			<div class="accordion-body p-2">
+                            				<table class="table table-sm table-borderless ">
+                                                                                                    <tr><td><a class="tag_a">Article View</a></td> <td dir="ltr"> <span class="badge bg-light text-dark px-3">761</span></td></tr>
+                                                                                                    <tr><td><a class="tag_a">PDF Download</a></td> <td dir="ltr"> <span class="badge bg-light text-dark px-3">720</span></td></tr>
+                                                                                            </table>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>                
+            
+                                    				</div>
+    				</div>
+            </div>
+            
+                <div class="col-md-3 col-sm-12 col-xs-12 order-md-1">
+                
+<div class="accordion shadow-sm mb-3">
+    <div class="card my-2 rounded-0" id="dv_home_search">
+        <div class="card-body px-2 pt-4">
+            <div class="searchBox">
+                <form action="./" method="get">
+                    <input type="hidden" name="_action" value="article">
+                    <div class="input-group">
+                        <input class="form-control rounded-0" type="text" name="keywords" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary rounded-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="ps-1 pt-1"><a href="./?_action=advSearch">Advanced Search</a></div>
+        </div>
+    </div>
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_home">
+        			<a href="././" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Home</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_browse">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_browse_" aria-expanded="true" aria-controls="pmenu_browse_">Browse</button>
+            		</h2>
+            		<div id="pmenu_browse_" class="accordion-collapse collapse" aria-labelledby="pmenu_browse">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./?_action=current">Current Issue</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=issue">By Issue</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=author">By Author</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=subject">By Subject</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./author.index">Author Index</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./keyword.index">Keyword Index</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_26794">
+        			<a href="./page_2852.html" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >A-Z Journals</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_29046">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_29046_" aria-expanded="true" aria-controls="pmenu_29046_">About  Publisher</button>
+            		</h2>
+            		<div id="pmenu_29046_" class="accordion-collapse collapse" aria-labelledby="pmenu_29046">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_3319.html">About  Publisher</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3320.html">The DNA of Sami Publishing Company</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3321.html">A Letter to Future Generations</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3161.html">SPC Publisher&#039;s Policies</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2966.html">Please follow SPC Publisher channels</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_info">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_info_" aria-expanded="true" aria-controls="pmenu_info_">Journal Info</button>
+            		</h2>
+            		<div id="pmenu_info_" class="accordion-collapse collapse" aria-labelledby="pmenu_info">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./journal/about">About Journal</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/aim_scope">Aims and Scope</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process?ethics">Publication Ethics</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3423.html">Publisher, Ownership and Financial Support</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3626.html">Editorial &amp; Publication Ethics Policy Manual</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2856.html">Journal Policies and Publication Standards</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2861.html">Publisher Business Model</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2850.html">Article Processing Charges</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2860.html">Publication Cycle-Process Flowchart</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3627.html">Journal Resources &amp; Quick Access</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process">Peer Review Process</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2857.html">Open Access Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2863.html">Self-Archiving Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3426.html">Privacy Statement</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3394.html">Journal Identity Profile</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/metrics">Journal Metrics</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2851.html">Benefits for Authors</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/links">Related Links</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/faq">FAQ</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./news">News</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_29074">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_29074_" aria-expanded="true" aria-controls="pmenu_29074_">Editorial Governance Manual</button>
+            		</h2>
+            		<div id="pmenu_29074_" class="accordion-collapse collapse" aria-labelledby="pmenu_29074">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_3322.html">Editorial &amp; Publishing Governance</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3347.html">Editorial Philosophy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3350.html">Copyright &amp; Licensing Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3348.html">Diamond Open Access Philosophy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3351.html">Corrections, Retractions and Expressions of Concern Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3352.html">Appeals and Complaints Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3353.html">Publication Ethics Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3630.html">Authorship and Contributorship Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3354.html">Conflict of Interest Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3355.html">AI and Generative Technologies Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3356.html">Data Availability Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3357.html">Editorial Independence Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3358.html">Research Misconduct Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3359.html">Archiving and Digital Preservation Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3360.html">Operational Excellence</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3379.html">Journal Statistics and Geographic Diversity</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3625.html">SPEGF Core Governance Document</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3631.html">Quality Assurance and Continuous Improvement</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_indexing">
+        			<a href="./journal/indexing" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Indexing and Abstracting</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_edb">
+        			<a href="./journal/editorial.board" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Editorial Board</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_aug">
+        			<a href="./journal/authors.note" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Guide for Authors</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_submit">
+        			<a href="./author" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Submit Manuscript</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_26802">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_26802_" aria-expanded="true" aria-controls="pmenu_26802_">Editor Page</button>
+            		</h2>
+            		<div id="pmenu_26802_" class="accordion-collapse collapse" aria-labelledby="pmenu_26802">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_2854.html">Editors</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2853.html">Editorial Policies</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2855.html">Guidelines for Guest Editors</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_rev">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_rev_" aria-expanded="true" aria-controls="pmenu_rev_">Reviewers</button>
+            		</h2>
+            		<div id="pmenu_rev_" class="accordion-collapse collapse" aria-labelledby="pmenu_rev">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_2862.html">Reviewers</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2858.html">Peer Review Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process">Peer Review Process</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_cu">
+        			<a href="./journal/contact.us" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Contact Us</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_27273">
+        			<a href="./page_2908.html" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Using &amp; citation</a>
+        		</h2>
+			</div>
+		</div>			
+    
+</div>                </div>
+            
+        </div>
+	</div>
+</div></div>
+
+<div id="cite-apa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="apa" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="apa">APA</h6>
+			</div>
+			<div class="modal-body">
+				<p> Gavari-Bami, S., Bayramzadeh, H. & Yoosefian, M. (2025). Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy. <em>Advanced Journal of Nanochemistry and Medicine</em>, <em>1</em>(1), 1–16. https://doi.org/10.48309/ajnm.2025.226427</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-mla" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mla" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="mla">MLA</h6>
+			</div>
+			<div class="modal-body">
+				<p> Gavari-Bami, S., Bayramzadeh, H.,  & Yoosefian, M. "Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy", <em>Advanced Journal of Nanochemistry and Medicine</em>, 1, 1, 2025, 1–16. doi: 10.48309/ajnm.2025.226427</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-harvard" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="harvard" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="harvard">HARVARD</h6>
+			</div>
+			<div class="modal-body">
+				<p> Gavari-Bami, S., Bayramzadeh, H.,  & Yoosefian, M. (2025). 'Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy', <em>Advanced Journal of Nanochemistry and Medicine</em>, 1(1), pp. 1–16. doi: 10.48309/ajnm.2025.226427</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-chicago" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="chicago" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="chicago">CHICAGO</h6>
+			</div>
+			<div class="modal-body">
+				<p> Gavari-Bami, S., Bayramzadeh, H. & Yoosefian, M., "Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy." Advanced Journal of Nanochemistry and Medicine, 1 1 (2025): 1–16,  doi: 10.48309/ajnm.2025.226427</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-vancouver" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vancouver" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="vancouver">VANCOUVER</h6>
+			</div>
+			<div class="modal-body">
+				<p>Gavari-Bami S., Bayramzadeh H., Yoosefian M. Molecular dynamics-informed design of functionalized graphene oxide nanocarriers for enhanced romidepsin delivery in solid tumor therapy. Adv. J. Nanochem. Med. 2025;1(1):1–16. doi: 10.48309/ajnm.2025.226427</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+    <footer>
+        <div id="footer" class="container-fluid pt-3">
+            <div class="overlay"></div>
+                <div class="row equal widgetList">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox">
+                            <ul class="list-group">
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_home"><a href="./">Home</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_about"><a href="./journal/about">About Journal</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_Edb"><a href="./journal/editorial.board">Editorial Board</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_submit"><a href="./author">Submit Manuscript</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_contactus"><a href="./journal/contact.us">Contact Us</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_sitemap"><a href="./sitemap.xml?usr">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox news">
+                            <!-- Latest News -->
+                            <h5 class="letter-spacing-1">News</h5>
+                            <ul class="footer-posts list-unstyled">
+                                                            </ul>
+                            <!-- /Latest News -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 margin-bottom-20">
+                        <div class="widgetBox"></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox">
+        					<h5 class="">Newsletter Subscription</h5>
+        					<p>Subscribe to the journal newsletter and receive the latest news and updates</p>
+        
+        					<form class="validate" action="" method="post" data-success="Subscription saved successfully." data-toastr-position="bottom-right">
+        						        						<input type="hidden" name="_token" value="3d37b301055aa2bea3dda230bdc837f97afb6009a0840b14"/>
+                                <div class="input-group">
+                                 	<span class="input-group-text" id=""><i class="fa-regular fa-envelope"></i></span>
+                                    <input class="form-control mr-2" type="email" name="email" maxlength="40" aria-label="Enter your Email">
+                                    <button class="btn btn-primary" type="button" id="btn_sbscrb">Subscribe</button>
+                                </div>
+        					</form>
+
+					<div class="mt-3">
+					    <ul class="list-inline">
+					
+												<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://whatsapp.com/channel/0029VaGWFVT3rZZij5vxI21E" target="_blank" data-bs-toggle="tooltip" data-bs-title="Whatsapp" title="Whatsapp">
+							<i class="fa-brands fa-square-whatsapp fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://t.me/Sami_Publishing_Company" target="_blank" data-bs-toggle="tooltip" data-bs-title="Telegram" title="Telegram">
+							<i class="fa-brands fa-telegram fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://youtube.com/@samipublishingcompany?si=p1FEA6oKDzlKXjsN" target="_blank" data-bs-toggle="tooltip" data-bs-title="Youtube" title="Youtube">
+							<i class="fa-brands fa-youtube fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://www.instagram.com/sami_publishing_companyllc?igsh=ZHF4azB6NWFjbnB6&utm_source=qr" target="_blank" data-bs-toggle="tooltip" data-bs-title="Instagram" title="Instagram">
+							<i class="fa-brands fa-instagram fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://www.linkedin.com/groups/11810042/" target="_blank" data-bs-toggle="tooltip" data-bs-title="Linkedin" title="Linkedin">
+							<i class="fa-brands fa-linkedin fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://x.com/AJNM2025" target="_blank" data-bs-toggle="tooltip" data-bs-title="X-Twitter" title="X-Twitter">
+							<i class="fa-brands fa-x-twitter fa-2x m-1"></i>							
+							</a></li>
+													<li class="list-inline-item mx-0 social_icon"><a class="" href="./ju.rss" data-bs-toggle="tooltip" data-bs-title="RSS" data-bs-title="RSS"><i class="fa-solid fa-square-rss fa-2x m-1"></i></a></li>
+					</ul>
+					</div>
+						</div>
+                    </div>
+                </div>
+                <div class="copyright" style="position: relative">
+                &copy; Journal management system. <span id='sp_crt'>designed by <a target='_blank' href='https://www.sinaweb.net/'>sinaweb</a></span> 
+                </div>
+            </div>
+        </footer>
+
+		<button class="btn btn-sm btn-primary position-fixed bottom-0 end-0 translate-middle d-none shadow-sm  js_click pointer_cursor" data-handler="scrollToTop"  data-param_a="" id="back-to-up"><i class="fa-solid fa-chevron-up"></i></button>
+        <!-- user defined scripts-->
+        
+        <!-- Extra Script Scripts -->
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"38b40ebbec3043e5a856c4f5f1e40cd2","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+<div id="actn_modal" class="modal fade" tabindex="-1">
+	<div id="modal_dlg" class="modal-dialog modal_aw modal-lg">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn px-1 float-end" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark text-secondary"></i></button>
+				<span class="modal-title"></span>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
