@@ -2,3 +2,13 @@
 
 /* Readable publication metadata on compact layouts. */
 .record-meta,.record-links,.stats span{font-size:14px}
+
+.quick-links,.issue-links{display:flex;flex-wrap:wrap;gap:12px}
+.home-panel{margin:24px 0;padding:clamp(16px,4vw,30px);border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.home-panel h2{margin-top:0}
+.home-panel .section-title{margin-bottom:0;flex-wrap:wrap}
+.home-panel .issue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.volume-card{padding:20px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.volume-card h3{margin-top:0;font-size:24px}
+.issue-links a{padding:7px 12px;background:var(--paper);border:1px solid var(--line);border-radius:5px}
+@media(max-width:650px){.home-panel .issue-grid{grid-template-columns:1fr}}
