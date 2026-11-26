@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    	<meta charset="utf-8" />
+    	<title>Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate</title>
+    	<link rel="shortcut icon" type="image/ico" href="./data/advjnm/coversheet/favicon.ico" />
+    	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    
+    	<!-- user defined metatags -->
+    	
+		<meta name="keywords" content="Human papillomavirus, HPV-16 E6, Molecular dynamics simulation, cilostazol, Protein–ligand stability, Drug repurposing" />
+		<meta name="description" content="Persistent infection with high-risk human papillomavirus type 16 (HPV-16) is a primary driver of cervical cancer and several other malignancies. The viral E6 oncoprotein promotes oncogenesis by mediating the degradation of the tumor suppressor p53. Therefore, compounds capable of maintaining stable interactions with E6 may provide a rational basis for antiviral and anticancer drug development. In this study, the dynamic stability of five selected ligands (axitinib, cabozantinib, tivozanib, deflazacort, and cilostazol) in complex with HPV-16 E6 was evaluated through 300-ns all-atom molecular dynamics (MD) simulations using GROMACS 2022.4, the CHARMM36 force field, and the TIP3P water model. Structural stability, flexibility, compactness, and interaction persistence were assessed using RMSD, RMSF, hydrogen bonding, radius of gyration (Rg), protein–ligand distance, contact number, and solvent-accessible surface area (SASA) analyses. Among the five complexes, the cilostazol–E6 system exhibited the most favorable overall dynamic stability profile throughout the 300-ns simulation. It maintained 6–10 persistent hydrogen bonds, a stable radius of gyration (~1.70 nm), a consistent protein–ligand distance (~0.18 nm), and a protein–ligand contact profile that increased from approximately 800–1200 contacts during the early stage to 1500–2000 contacts during the later phase of the simulation, along with an average SASA of approximately 97 nm², collectively reflecting sustained structural integrity and interaction persistence. In comparison, the other ligands (axitinib, cabozantinib, tivozanib, and deflazacort) generally exhibited less favorable dynamic behavior across the evaluated molecular dynamics parameters, indicating lower overall complex stability. These findings demonstrate that cilostazol forms a more stable complex with HPV-16 E6 than the other tested compounds and represents a promising candidate for further experimental investigation as a potential E6-targeted antiviral and anticancer agent." />
+		<meta name="title" content="Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate" />
+		<meta name="googlebot" content="NOODP" />
+		<meta name="citation_title" content="Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate" />
+		<meta name="citation_author" content="Ahmadi, Mahshid" />
+		<meta name="citation_author_institution" content="Department of Chemistry, Graduate University of Advanced Technology, Kerman, Iran" />
+		<meta name="citation_abstract" content="Persistent infection with high-risk human papillomavirus type 16 (HPV-16) is a primary driver of cervical cancer and several other malignancies. The viral E6 oncoprotein promotes oncogenesis by mediating the degradation of the tumor suppressor p53. Therefore, compounds capable of maintaining stable interactions with E6 may provide a rational basis for antiviral and anticancer drug development. In this study, the dynamic stability of five selected ligands (axitinib, cabozantinib, tivozanib, deflazacort, and cilostazol) in complex with HPV-16 E6 was evaluated through 300-ns all-atom molecular dynamics (MD) simulations using GROMACS 2022.4, the CHARMM36 force field, and the TIP3P water model. Structural stability, flexibility, compactness, and interaction persistence were assessed using RMSD, RMSF, hydrogen bonding, radius of gyration (Rg), protein–ligand distance, contact number, and solvent-accessible surface area (SASA) analyses. Among the five complexes, the cilostazol–E6 system exhibited the most favorable overall dynamic stability profile throughout the 300-ns simulation. It maintained 6–10 persistent hydrogen bonds, a stable radius of gyration (~1.70 nm), a consistent protein–ligand distance (~0.18 nm), and a protein–ligand contact profile that increased from approximately 800–1200 contacts during the early stage to 1500–2000 contacts during the later phase of the simulation, along with an average SASA of approximately 97 nm², collectively reflecting sustained structural integrity and interaction persistence. In comparison, the other ligands (axitinib, cabozantinib, tivozanib, and deflazacort) generally exhibited less favorable dynamic behavior across the evaluated molecular dynamics parameters, indicating lower overall complex stability. These findings demonstrate that cilostazol forms a more stable complex with HPV-16 E6 than the other tested compounds and represents a promising candidate for further experimental investigation as a potential E6-targeted antiviral and anticancer agent." />
+		<meta name="citation_id" content="245565" />
+		<meta name="citation_publication_date" content="2026/09/01" />
+		<meta name="citation_date" content="2026-09-01" />
+		<meta name="citation_journal_title" content="Advanced Journal of Nanochemistry and Medicine" />
+		<meta name="citation_issn" content="3150-4248" />
+		<meta name="citation_volume" content="2" />
+		<meta name="citation_issue" content="3" />
+		<meta name="citation_firstpage" content="216" />
+		<meta name="citation_lastpage" content="228" />
+		<meta name="citation_publisher" content="Sami Publishing Company" />
+		<meta name="citation_doi" content="10.48309/ajnm.2026.584345.1041" />
+		<meta name="DC.Identifier" content="10.48309/ajnm.2026.584345.1041" />
+		<meta name="citation_abstract_html_url" content="https://ajnm.samipubco.com/article_245565.html" />
+		<meta name="citation_fulltext_html_url" content="https://ajnm.samipubco.com/article_245565.html" />
+		<meta name="citation_pdf_url" content="https://ajnm.samipubco.com/article_245565_1eb9a88f9debce325bf8f42208396d60.pdf" />
+		<meta name="DC.Title" content="Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate" />
+		<meta name="DC.Source" content="Advanced Journal of Nanochemistry and Medicine" />
+		<meta name="DC.Date" content="01/09/2026" />
+		<meta name="DC.Date.issued" content="2026-09-01" />
+		<meta name="DC.Format" content="application/pdf" />
+		<meta name="DC.Contributor" content="Ahmadi, Mahshid" />
+		<meta property="og:title" content="Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate" />
+		<meta property="og:type" content="article" />
+		<meta property="og:description" content="Persistent infection with high-risk human papillomavirus type 16 (HPV-16) is a primary driver of cervical cancer and several other malignancies. The viral E6 oncoprotein promotes oncogenesis by mediating the degradation of the tumor suppressor p53. Therefore, compounds capable of maintaining stable interactions with E6 may provide a rational basis for antiviral and anticancer drug development. In this study, the dynamic stability of five selected ligands (axitinib, cabozantinib, tivozanib, deflazacort, and cilostazol) in complex with HPV-16 E6 was evaluated through 300-ns all-atom molecular dynamics (MD) simulations using GROMACS 2022.4, the CHARMM36 force field, and the TIP3P water model. Structural stability, flexibility, compactness, and interaction persistence were assessed using RMSD, RMSF, hydrogen bonding, radius of gyration (Rg), protein–ligand distance, contact number, and solvent-accessible surface area (SASA) analyses. Among the five complexes, the cilostazol–E6 system exhibited the most favorable overall dynamic stability profile throughout the 300-ns simulation. It maintained 6–10 persistent hydrogen bonds, a stable radius of gyration (~1.70 nm), a consistent protein–ligand distance (~0.18 nm), and a protein–ligand contact profile that increased from approximately 800–1200 contacts during the early stage to 1500–2000 contacts during the later phase of the simulation, along with an average SASA of approximately 97 nm², collectively reflecting sustained structural integrity and interaction persistence. In comparison, the other ligands (axitinib, cabozantinib, tivozanib, and deflazacort) generally exhibited less favorable dynamic behavior across the evaluated molecular dynamics parameters, indicating lower overall complex stability. These findings demonstrate that cilostazol forms a more stable complex with HPV-16 E6 than the other tested compounds and represents a promising candidate for further experimental investigation as a potential E6-targeted antiviral and anticancer agent." />
+		<meta property="og:url" content="https://ajnm.samipubco.com/article_245565.html" />    
+    
+    	<!-- user defined metatags-->
+    	            <link href="./themes/base/assets/css/bootstrap.min.css" rel="stylesheet" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90">
+    		<link href=" ./themes/base/front/assets/css/gfonts-OpenSans.css" rel="stylesheet" type="text/css"  nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90"/>
+                <link href="./themes/base/assets/css/font-awesome.min.css" rel="stylesheet" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90">
+        <link href="./themes/base/assets/css/select2.min.css" rel="stylesheet" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90">
+        <link href="./themes/base/assets/css/select2-bootstrap-theme.min.css" rel="stylesheet" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90">
+        
+    	<link href="./themes/theme4/front/assets/css/style.css" rel="stylesheet" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90">
+    	<link rel="alternate" type="application/rss+xml" title="RSS feed" href="./ju.rss" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90" />
+    	<link href="./data/advjnm/coversheet/stl_front.css?v=0.15" rel="stylesheet" type="text/css" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90" />
+    	<link rel="stylesheet" href="./inc/css/print.css" media="print" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90">
+    	    
+    	<!-- Feed-->
+    	<link href="./data/advjnm/coversheet/stl_front.css?v=0.32" rel="stylesheet" type="text/css" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90" />
+    	<script type="text/javascript" src="./themes/base/assets/js/app.js" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90"></script>
+    
+    
+    	<!-- Extra Style Scripts -->
+    	<link href="https://ajnm.samipubco.com/article_245565.html" rel="canonical" />    
+    	<!-- Extra Script Scripts -->
+    	    
+<script type="application/ld+json" nonce="9a63eb46d37dfd36041e00b591ca1d60c6a7b8195c157c90">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate",
+  "description": "Persistent infection with high-risk human papillomavirus type 16 (HPV-16) is a primary driver of cervical cancer and several other malignancies. The viral E6 oncoprotein promotes oncogenesis by mediating the degradation of the tumor suppressor p53. Therefore, compounds capable of maintaining stable interactions with E6 may provide a rational basis for antiviral and anticancer drug development. In this study, the dynamic stability of five selected ligands (axitinib, cabozantinib, tivozanib, deflazacort, and cilostazol) in complex with HPV-16 E6 was evaluated through 300-ns all-atom molecular dynamics (MD) simulations using GROMACS 2022.4, the CHARMM36 force field, and the TIP3P water model. Structural stability, flexibility, compactness, and interaction persistence were assessed using RMSD, RMSF, hydrogen bonding, radius of gyration (Rg), protein–ligand distance, contact number, and solvent-accessible surface area (SASA) analyses. Among the five complexes, the cilostazol–E6 system exhibited the most favorable overall dynamic stability profile throughout the 300-ns simulation. It maintained 6–10 persistent hydrogen bonds, a stable radius of gyration (~1.70 nm), a consistent protein–ligand distance (~0.18 nm), and a protein–ligand contact profile that increased from approximately 800–1200 contacts during the early stage to 1500–2000 contacts during the later phase of the simulation, along with an average SASA of approximately 97 nm², collectively reflecting sustained structural integrity and interaction persistence. In comparison, the other ligands (axitinib, cabozantinib, tivozanib, and deflazacort) generally exhibited less favorable dynamic behavior across the evaluated molecular dynamics parameters, indicating lower overall complex stability. These findings demonstrate that cilostazol forms a more stable complex with HPV-16 E6 than the other tested compounds and represents a promising candidate for further experimental investigation as a potential E6-targeted antiviral and anticancer agent.",
+  "author":[{"@type":"Person","name":"Mahshid Ahmadi","url":"https:\/\/orcid.org\/0009-0003-6029-5592"}],
+"headline":"Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate",
+      "datePublished": "2026-09-01T00:00:00+00:00",
+      "dateModified": "2026-10-29T18:00:13+00:00",
+      "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ajnm.samipubco.com/article_245565.html"
+  }
+}
+</script>    
+	    </head>
+
+	<body dir="ltr"  >
+
+	<section id="topbar" class="pt-1">
+		<div class="container-fluid">
+  		<div class="row mb-1">
+			<div class="col-md-5">
+							</div>
+  			<div class="col-md-7 col-sm-7">
+				<ul class="list-inline d-flex my-0 justify-content-end">
+									<li class="list-item border-0 px-0 bg-light"><a class="btn btn-outline-secondary btn-sm btn-link border-0 badge py-2 pe-3 rounded-1" href="./contacts"><i class="fa-regular fa-circle-user"></i> Login</a></li>
+					<li class="list-item ms-2 border-0 px-0 bg-light"><a class="btn btn-outline-secondary btn-sm btn-link border-0 badge py-2 pe-3 rounded-1" href="./contacts?_action=signup"> Register</a></li>
+													
+				
+				</ul>
+			</div>
+		</div>
+		</div>
+	</section>	
+	<header class="mb-3">	
+	<div class="brandBar py-1">
+		<div class="container-fluid border-primary position-relative">
+			<div class="row my-2">
+    			<div class="col-md-8 col-sm-8">
+    				<table>
+    				<tr>
+        				<td><a href="./" class="hdr_logo"><img class="logo me-2 img-fluid" src="./data/advjnm/coversheet/logo_en.png" onerror="this.style.display='none'"></a></td>
+        				<td class="ps-2"><a href="./" class="hdr_tttl"><h1 id="ju_header_title_m" class="lh-sm d-inline">Advanced Journal of Nanochemistry and Medicine</h1></a></td>
+        			</tr>
+        			</table>
+    			</div>
+        		<div class="col-md-4 col-sm-4 mt-auto">
+        			<div class=" d-flex align-items-bottom float-end" id="ReleasePeriod"><div class='row'>
+<div class="col-md-5" style="text-align:center">8<br/>h.index</div>
+<div class="col-md-7" style="text-align:center">7<br/>i10-index</div></div>
+        		</div>	
+    		</div>
+		</div>
+	</div>
+	</header>
+
+<div id="generalPage" class="container-fluid">
+    <div class="row equal">
+            <div class="pageContent">
+                <!-- bread breadcrumb -->
+<nav aria-label="breadcrumb mb-3">
+  <ol class="breadcrumb d-none d-md-flex">
+    <li class="breadcrumb-item"><a href="./" class="">Home</a></li>
+		 <li class="breadcrumb-item active" aria-current="page">
+	Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein–ligand complexes: cilostazol as a promising stable candidate	</li>
+</ol>
+</nav>                <div class="row flex-column flex-sm-row">
+                <div class="col-md-9 col-sm-12 col-xs-12 order-md-2 pb-5">
+                    <div class="row">
+                        <!-- CENTER -->
+                        <div class="col-lg-9 col-md-9 col-sm-8" id="dv_artcl">
+                            <!-- Current Issue -->
+                            <div>
+                            <h1 class="mb-2 text-break fs-5 text-justify " dir="ltr"><span class="article_title fw-bold"> <a href="./article_245565_1eb9a88f9debce325bf8f42208396d60.pdf" target="_blank">Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate</a></span></h1>
+                                <div>
+                                                
+                                                
+                                        <div class="mb-1">
+                                                                                    </div>
+            
+                                                                                    <p class="mb-1">Document Type : Original Article</p>
+                                                    
+                                                
+                                                                            <p class="p-1"><strong>Author</strong></p>
+            
+                                        <div class="mb-2 " dir="ltr">
+                                                                                            <div class="me-3 d-inline">
+                                                    <a href="./?_action=article&amp;au=1812267&amp;_au=Mahshid++Ahmadi">Mahshid  Ahmadi</a>
+            
+                                                                                                            <sup><a href="/cdn-cgi/l/email-protection#84e7ece1e9edf7f0f6fde8e5e6ebf6e5f0ebf6fdfde8e5e6c4e3e9e5ede8aae7ebe9" title="Email to Corresponding Author"><i class="fa-regular fa-envelope" ></i></a></sup>
+                                                                                                            <sup class="ltr"><a class="" href="https://orcid.org/0009-0003-6029-5592" title="ORCID: 0009-0003-6029-5592" target="_blank"><i class="fa-brands fa-orcid fa-lg"></i></a></sup>
+                                                                
+                                                                                                    </div>
+                                                                                    </div>
+            
+                                                                                    <p class="mb-1 " dir="ltr" id="aff1">
+                                                                                                Department of Chemistry, Graduate University of Advanced Technology, Kerman, Iran                                            </p>
+                                                    
+                                                                                                                <div class="mb-1 " dir="ltr" id="ar_doi" title="DOI"><i class="ai ai-doi text-warning fa-lg me-1"></i> <span dir="ltr"><a href="https://doi.org/10.48309/ajnm.2026.584345.1041">https://doi.org/10.48309/ajnm.2026.584345.1041</a></span></div>
+                                                
+                                                
+                                        <div id="dv_ar_abs_lbl"><strong>Abstract</strong></div>
+                                        <div id="dv_ar_abs" class="padding_abstract text-break text-justify border-start border-3 p-3 my-2 " dir="ltr">Persistent infection with high-risk human papillomavirus type 16 (HPV-16) is a primary driver of cervical cancer and several other malignancies. The viral E6 oncoprotein promotes oncogenesis by mediating the degradation of the tumor suppressor p53. Therefore, compounds capable of maintaining stable interactions with E6 may provide a rational basis for antiviral and anticancer drug development. In this study, the dynamic stability of five selected ligands (axitinib, cabozantinib, tivozanib, deflazacort, and cilostazol) in complex with HPV-16 E6 was evaluated through 300-ns all-atom molecular dynamics (MD) simulations using GROMACS 2022.4, the CHARMM36 force field, and the TIP3P water model. Structural stability, flexibility, compactness, and interaction persistence were assessed using RMSD, RMSF, hydrogen bonding, radius of gyration (Rg), protein&ndash;ligand distance, contact number, and solvent-accessible surface area (SASA) analyses. Among the five complexes, the cilostazol&ndash;E6 system exhibited the most favorable overall dynamic stability profile throughout the 300-ns simulation. It maintained 6&ndash;10 persistent hydrogen bonds, a stable radius of gyration (~1.70 nm), a consistent protein&ndash;ligand distance (~0.18 nm), and a protein&ndash;ligand contact profile that increased from approximately 800&ndash;1200 contacts during the early stage to 1500&ndash;2000 contacts during the later phase of the simulation, along with an average SASA of approximately 97 nm&sup2;, collectively reflecting sustained structural integrity and interaction persistence. In comparison, the other ligands (axitinib, cabozantinib, tivozanib, and deflazacort) generally exhibited less favorable dynamic behavior across the evaluated molecular dynamics parameters, indicating lower overall complex stability. These findings demonstrate that cilostazol forms a more stable complex with HPV-16 E6 than the other tested compounds and represents a promising candidate for further experimental investigation as a potential E6-targeted antiviral and anticancer agent.</div>
+            
+                                                
+                                                                                                                        <p class="p-1"><strong>Graphical Abstract</strong></p>
+                                                                                <div class="text-center"><a class="js_click pointer_cursor" data-handler="loadModal" data-param_a="Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate" data-param_b="data/advjnm/coversheet/161791739415.jpg"><img alt="Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate " src="data/advjnm/coversheet/161791739415.jpg" class="gr_abs_img img-fluid"/></a></div>
+                                                
+                                                
+                                                                            <p class="p-1"><strong>Keywords</strong></p>
+            
+                                        <div class="mb-2 " dir="ltr">
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=668629&amp;_kw=Human+papillomavirus%2C+HPV-16+E6%2C+Molecular+dynamics+simulation%2C+cilostazol%2C+Protein%E2%80%93ligand+stability%2C+Drug+repurposing" >Human papillomavirus, HPV-16 E6, Molecular dynamics simulation, cilostazol, Protein&ndash;ligand stability, Drug repurposing</a>
+                                                </div>
+                                                                                    </div>
+                                                
+                                                                        <div class="pt-1"><strong>Subjects</strong></div>
+        
+                                    <ul class="block list-inline list-inline-seprator mb-2">
+                                                                                    <li class="px-2 pb-1">
+                                                <a href="./?_action=article&amp;sb=12158&amp;_sb=Drug+design+and+discovery" >Drug design and discovery</a>
+                                            </li>
+                                                                            </ul>
+                                                                    </div>
+            
+                                <hr>
+            
+                                            
+                                            
+                                            
+                                                                                                                                            						<div><p style="text-align: justify;"><strong>OPEN ACCESS</strong></p>
+<p style="text-align: justify;">&copy;2026 The author(s). This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article&rsquo;s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article&rsquo;s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit: <a href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a></p>
+<p style="text-align: justify;"><strong>PUBLISHER NOTE</strong></p>
+<p style="text-align: justify;">Sami Publishing Company remains neutral concerning jurisdictional claims in published maps and institutional affiliations.</p>
+<p style="text-align: justify;"><strong>CURRENT PUBLISHER</strong></p>
+<p style="text-align: justify;"><a href="http://www.samipubco.com/">Sami Publishing Company</a></p></div>
+                    			    
+            
+                                                                	<div class="page_break"></div>
+                                	<div>
+                                    <button class="btn pe-3 fw-bold fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneRef" aria-expanded="false" aria-controls="collapseOneRef"><i class="fa-solid expand_ico fa-plus fw-bolder me-1"></i> References</button>
+                                    <div class="collapse mt-1" id="collapseOneRef">
+                                      <div class="card card-body border-0 px-0 text-break text-justify">
+                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r1"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[1]</span><span style="mso-bookmark: r1;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> </span></span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Zhang, Y., Qiu, K., Ren, J., Zhao, Y., Cheng, P. <a href="https://www.nature.com/articles/s41392-024-02083-w" target="_blank" rel="noopener"><span style="text-decoration: none; text-underline: none;">Roles of human papillomavirus in cancers: Oncogenic mechanisms and clinical use.</span></a> <em>Signal Transduction and Targeted Therapy</em>, <strong>2025</strong>, 10, 44.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref2"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[2]</span><span style="mso-bookmark: Ref2;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> </span></span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Scarth, J.A., Patterson, M.R., Morgan, E.L., Macdonald, A. <a href="https://www.microbiologyresearch.org/content/journal/jgv/10.1099/jgv.0.001540" target="_blank" rel="noopener"><span style="text-decoration: none; text-underline: none;">The human papillomavirus oncoproteins: A review of the host pathways targeted on the road to transformation.</span></a> <em>Journal of General Virology</em>, <strong>2021</strong>, 102.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref3"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[3]</span><span style="mso-bookmark: Ref3;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> </span></span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Pe&scaron;ut, E., Đukić, A., Lulić, L., Skelin, J., &Scaron;imić, I., Milutin Ga&scaron;perov, N., Tomaić, V., Sabol, I., Grce, M. <a href="https://www.mdpi.com/1999-4915/13/11/2234" target="_blank" rel="noopener"><span style="text-decoration: none; text-underline: none;">Human papillomaviruses-associated cancers: An update of current knowledge.</span></a> <em>Viruses</em>, <strong>2021</strong>, 13, 2234.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref4"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[4]</span><span style="mso-bookmark: Ref4;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Janiszewska, J., Kostrzewska-Poczekaj, M., Wierzbicka</span></span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">, M., Brenner, J.C., Giefing, M. <a href="https://link.springer.com/article/10.1007/s13353-024-00883-y" target="_blank" rel="noopener"><span style="text-decoration: none; text-underline: none;">HPV-driven oncogenesis&mdash;much more than the E6 and E7 oncoproteins.</span></a> <em>Journal of Applied Genetics</em>, <strong>2024</strong>, 66, 63-71.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref5"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[5]</span><span style="mso-bookmark: Ref5;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Baba, S.K., Alblooshi, S.S.E., Yaqoob, R., Behl, S., Al Saleem, M., Rakha, E.A., Malik, F., Singh, M., Macha, M.A., Akhtar, M.K., Houry, W.A., Bhat, A.A., Al Menhali, A., Zheng, Z.M., Mirza, S. </span></span><a href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-025-06470-x" target="_blank" rel="noopener"><span style="mso-bookmark: Ref5;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; text-decoration: none; text-underline: none;">Human papilloma virus (HPV) mediated cancers: An insightful update.</span></span></a><span style="mso-bookmark: Ref5;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Journal of Translational Medicine</em>, <strong>2025</strong>, 23, 483.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref6"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[6] Abboodi</span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">, F., et al. <span style="color: blue;">Human papillomavirus-mediated carcinogenesis and tumor progression. </span><i>Genome Instability &amp; Disease</i>, <strong>2021</strong>, 2, 71&ndash;91.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref7"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[7]</span><span style="mso-bookmark: Ref7;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Zanier</span></span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">, K., ould&nbsp;M'hamed&nbsp;ould&nbsp;Sidi, A., Boulade-Ladame, C., Rybin, V., Chappelle, A., Atkinson, A., Kieffer, B., Trav&eacute;, G. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0969212612000573" target="_blank" rel="noopener"><span style="text-decoration: none; text-underline: none;">Solution structure analysis of the hpv16 e6 oncoprotein reveals a self-association mechanism required for e6-mediated degradation of p53.</span></a> <em>Structure</em>, <strong>2012</strong>, 20, 604-617.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref8"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[8]</span><span style="mso-bookmark: Ref8;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> </span></span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Smalley, T.B., Nicolaci, A.A., Tran, K.C., Lokhandwala, J., Obertopp, N., Matlack, J.K., Miner, R.E., Teng, M.N., Pilon-Thomas, S., Binning, J.M. <a href="https://linkinghub.elsevier.com/retrieve/pii/S152500162500663X" target="_blank" rel="noopener"><span style="text-decoration: none; text-underline: none;">Targeted degradation of the HPV oncoprotein E6 reduces tumor burden in cervical cancer.</span></a> <em>Molecular Therapy</em>, <strong>2025</strong>, 33, 5415-5426.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref9"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[9]</span><span style="mso-bookmark: Ref9;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> </span></span><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Ahmadi, M., Yoosefian, M. <a href="https://www.nature.com/articles/s41598-026-42656-z" target="_blank" rel="noopener"><span style="text-decoration: none; text-underline: none;">Integrated computational screening of FDA-approved anticancer drugs as novel HPV-16 E6 inhibitors in cervical cancer.</span></a> <em>Scientific Reports</em>, <strong>2026</strong>, 16, 17272.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref10"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[10]</span><span style="mso-bookmark: Ref10;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Skelin, J., Tomaić, V. </span></span><a href="https://www.mdpi.com/1999-4915/15/11/2253" target="_blank" rel="noopener"><span style="mso-bookmark: Ref10;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; text-decoration: none; text-underline: none;">Comparative analysis of alpha and beta HPV E6 oncoproteins: Insights into functional distinctions and divergent mechanisms of pathogenesis.</span></span></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Viruses</em>, <strong>2023</strong>, 15, 2253.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref11"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[11]</span><span style="mso-bookmark: Ref11;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Skelin, J., Luk, H.Y., Butorac, D., Boon, S.S., Tomaić, V. </span></span><a href="https://onlinelibrary.wiley.com/doi/10.1002/jmv.29315" target="_blank" rel="noopener"><span style="mso-bookmark: Ref11;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; text-decoration: none; text-underline: none;">The effects of HPV oncoproteins on host communication networks: Therapeutic connotations.</span></span></a><span style="mso-bookmark: Ref11;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Journal of Medical Virology</em>, <strong>2023</strong>, 95, e29315.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r12"></a>12] V. Ranasinghe, N. A. J. McMillan. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.sciencedirect.com/science/article/pii/S104084282500109X"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Novel therapeutic strategies for targeting E6 and E7 oncoproteins in cervical cancer</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Critical Reviews in Oncology/Hematology</i>, <strong style="mso-bidi-font-weight: normal;">2025</strong>, 211, 104721.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r13"></a>13] E. Mart&iacute;n, G. Reina, S. Carlos. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.mdpi.com/1718-7729/32/11/600"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Advances in therapeutic vaccines against HPV: A review of human clinical trials</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Current Oncology</i>, <strong style="mso-bidi-font-weight: normal;">2025</strong>, 32, 600.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r14"></a>14] R. Wang, W. Pan, L. Jin, W. Huang, Y. Li, D. Wu, C. Gao, D. Ma, S. Liao. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.sciencedirect.com/science/article/pii/S0304383519306044"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Human papillomavirus vaccine against cervical cancer: opportunity and challenge</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Cancer Letters</i>, <strong style="mso-bidi-font-weight: normal;">2020</strong>, 471, 88&ndash;102.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r15"></a>15] M. Celegato, L. Messa, L. Goracci, B. Mercorelli, C. Bertagnin, F. Spyrakis, I. Suarez, A. Cousido-Siah, G. Trav&eacute;, L. Banks, G. Cruciani, G. Pal&ugrave;, A. Loregian. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.sciencedirect.com/science/article/pii/S030438351930549X"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">A novel small-molecule inhibitor of the human papillomavirus E6-p53 interaction that reactivates p53 function and blocks cancer cells growth</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Cancer Letters</i>, <strong style="mso-bidi-font-weight: normal;">2020</strong>, 470, 115&ndash;125.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r16"></a>16] L. E. Araujo-Arcos, S. Monta&ntilde;o, C. Bello-Rios, O. L. Garibay-Cerdenares, M. A. Leyva-V&aacute;zquez, B. Illades-Aguiar. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.nature.com/articles/s41598-022-05995-1"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Molecular insights into the interaction of HPV-16 E6 variants against MAGI-1 PDZ1 domain</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Scientific Reports</i>, <strong style="mso-bidi-font-weight: normal;">2022</strong>, 12, 1898.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r17"></a>17] J. C. K. Wang, H. T. Baddock, A. Mafi, I. T. Foe, M. Bratkowski, T.-Y. Lin, Z. D. Jensvold, M. Preciado L&oacute;pez, D. Stokoe, D. Eaton, Q. Hao, A. H. Nile. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.nature.com/articles/s41467-024-45920-w"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Structure of the p53 degradation complex from HPV16</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Nature Communications</i>, <strong style="mso-bidi-font-weight: normal;">2024</strong>, 15, 1842.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r18"></a>18] M. Yoosefian, A. Esmaeili, K. S. Abass. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.nature.com/articles/s41598-025-13094-0"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Pharmacokinetic, toxicological, and molecular interaction assessment of ginger-derived phenolics for SARS-CoV-2 main protease inhibition</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Scientific Reports</i>, <strong style="mso-bidi-font-weight: normal;">2025</strong>, 15, 27390.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r19"></a>19] A. Esmaeili, M. Yoosefian, M. Mahani. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.scielo.org.za/scielo.php?pid=S0379-43502023000100020&amp;script=sci_arttext"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Molecular dynamics simulation of lenalidomide interaction with CRBN protein: A target for immunomodulatory drugs</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>South African Journal of Chemistry</i>, <strong style="mso-bidi-font-weight: normal;">2023</strong>, 77, 157&ndash;162.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r20"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[20</span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">] M. Yoosefian, M. Z. Moghani, A. Juan. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.sciencedirect.com/science/article/pii/S0010482522003158"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">In silico evaluation of atazanavir as a potential HIV main protease inhibitor and its comparison with new designed analogs</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Computers in Biology and Medicine</i>, <strong style="mso-bidi-font-weight: normal;">2022</strong>, 145, 105523.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r21"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[21</span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">] H. Sargazi-Avval, M. Yoosefian, M. Ghaffari-Moghaddam, M. Khajeh, M. Bohlooli. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://link.springer.com/article/10.1007/s00339-021-04402-2"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Potential applications of armchair, zigzag, and chiral boron nitride nanotubes as a drug delivery system: Letrozole anticancer drug encapsulation</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Applied Physics A: Materials Science &amp; Processing</i>, <strong style="mso-bidi-font-weight: normal;">2021</strong>, 127, 257.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[22<a name="r22"></a>] D. Martinez-Zapien, F. X. Ruiz, J. Poirson, A. Mitschler, J. Ramirez, A. Forster, A. Cousido-Siah, M. Masson, S. Vande Pol, A. Podjarny, G. Trav&eacute;, K. Zanier. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.nature.com/articles/nature16481"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Structure of the E6/E6AP/p53 complex required for HPV-mediated degradation of p53</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Nature</i>, <strong style="mso-bidi-font-weight: normal;">2016</strong>, 529, 541&ndash;545.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r23"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[23] </span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">N. Kumar, S. Gupta, T. C. Yadav, V. Pruthi, P. K. Varadwaj, N. Goel. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.tandfonline.com/doi/full/10.1080/07391102.2018.1481457"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Extrapolation of phenolic compounds as multi-target agents against cancer and inflammation</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Biomolecular Structure and Dynamics</i>, <strong style="mso-bidi-font-weight: normal;">2019</strong>, 37, 2355&ndash;2369.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r24"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[24] N. </span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">Kumar, B. Gorai, S. Gupta, Shiva, N. Goel. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.tandfonline.com/doi/full/10.1080/07391102.2020.1792990"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Extrapolation of hydroxytyrosol and its analogues as potential anti-inflammatory agents</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Biomolecular Structure and Dynamics</i>, <strong style="mso-bidi-font-weight: normal;">2021</strong>, 39, 5588&ndash;5599.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r25"></a><a name="r252"></a><span style="mso-bookmark: r25;">25] </span>G. M. Morris, R. Huey, A. J. Olson. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471250953.bi0814s24"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Using AutoDock for ligand-receptor docking</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Current Protocols in Bioinformatics</i>, <strong style="mso-bidi-font-weight: normal;">2008</strong>, 24, 8.14.1&ndash;8.14.40.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r26"></a>26] M. J. Abraham, T. Murtola, R. Schulz, S. P&aacute;ll, J. C. Smith, B. Hess, E. Lindahl. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.sciencedirect.com/science/article/pii/S2352711015000059"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>SoftwareX</i>, <strong style="mso-bidi-font-weight: normal;">2015</strong>, 1&ndash;2, 19&ndash;25.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r27"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[27] </span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">A. Croitoru, S.-J. Park, A. Kumar, J. Lee, W. Im, A. D. MacKerell Jr., A. Aleksandrov. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://pubs.acs.org/doi/10.1021/acs.jctc.1c00254"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Additive CHARMM36 force field for nonstandard amino acids</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Chemical Theory and Computation</i>, <strong style="mso-bidi-font-weight: normal;">2021</strong>, 17, 3554&ndash;3570.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r28"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[28</span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">] K. Vanommeslaeghe, E. Hatcher, C. Acharya, S. Kundu, S. Zhong, J. Shim, E. Darian, O. Guvench, P. Lopes, I. Vorobyov, A. D. MacKerell Jr.. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://onlinelibrary.wiley.com/doi/10.1002/jcc.21367"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">CHARMM general force field: A force field for drug-like molecules compatible with the CHARMM all-atom additive biological force fields</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Computational Chemistry</i>, <strong style="mso-bidi-font-weight: normal;">2010</strong>, 31, 671&ndash;690.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[<a name="r29"></a>29] K. Vanommeslaeghe, A. D. MacKerell Jr.. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://pubs.acs.org/doi/10.1021/ci300363c"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Automation of the CHARMM General Force Field (CGenFF) I: Bond perception and atom typing</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Chemical Information and Modeling</i>, <strong style="mso-bidi-font-weight: normal;">2012</strong>, 52, 3144&ndash;3154.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r30"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[30] W. L. Jorgensen, J. Chandrasekhar, J. D. Madura, R. W</span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. Impey, M. L. Klein. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://doi.org/10.1063/1.445869"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Comparison of simple potential functions for simulating liquid water</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>The Journal of Chemical Physics</i>, <strong style="mso-bidi-font-weight: normal;">1983</strong>, 79, 926&ndash;935.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r31"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[31] </span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">M. Parrinello, A. Rahman. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://doi.org/10.1063/1.328693"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">Polymorphic transitions in single crystals: A new molecular dynamics method</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Applied Physics</i>, <strong style="mso-bidi-font-weight: normal;">1981</strong>, 52, 7182&ndash;7190.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r32"></a><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[32] </span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">B. Hess, C. Kutzner, D. van der Spoel, E. Lindahl. </span><span style="font-size: 12.0pt; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://pubs.acs.org/doi/10.1021/ct700301q"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">GROMACS 4: Algorithms for highly efficient, load-balanced, and scalable molecular simulation</span></a></span><span style="font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Chemical Theory and Computation</i>, <strong style="mso-bidi-font-weight: normal;">2008</strong>, 4, 435&ndash;447.</span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="r33"></a><span style="font-size: 12.0pt; line-height: 115%; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">[33] </span><span style="font-size: 12.0pt; line-height: 115%; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">W. Humphrey, A. Dalke, K. Schulten. </span><span style="font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;"><a href="https://www.sciencedirect.com/science/article/pii/0263785596000185"><span style="mso-fareast-font-family: 'Times New Roman'; color: #0000cc; text-decoration: none; text-underline: none;">VMD: Visual molecular dynamics</span></a></span><span style="font-size: 12.0pt; line-height: 115%; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin;">. <i>Journal of Molecular Graphics</i>, <strong style="mso-bidi-font-weight: normal;">1996</strong>, 14, 33&ndash;38.</span></div>                                                                                                                              </div>
+                                    </div>                	
+                                	</div>
+            
+            
+                                            
+            
+                                            
+            
+                                            
+                            </div>
+            
+            
+                        </div>
+                        <!-- /CENTER -->
+            
+                        <!-- LEFT -->
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+            
+                                                <div class="card mb-2">
+                        <div class="card-body ar_info_pnl p-2" id="ar_info_pnl_cover">
+            
+                        <div id="pnl_cover">
+                            <div class="row" >
+                                <div class="col-6">
+                            		<a class="js_click pointer_cursor" data-handler="loadModal" data-param_a="Advanced Journal of Nanochemistry and Medicine" data-param_b="./data/advjnm/coversheet/831793284164.jpg">
+                            			<img src="data/advjnm/coversheet/831793284164.jpg" alt="Advanced Journal of Nanochemistry and Medicine" class="img-fluid shadow-sm">
+                            		</a>
+                                </div>
+                                <div class="col-6">
+                                    <h6><a href="./issue_33805_34320.html">Volume 2, Issue 3</a><br/>Summer 2026<div id="sp_ar_pages">Pages <span dir="ltr">216-228</span></div></h6>
+                                    								</div>                                    
+                            </div>
+                            </div>
+            
+                         </div>
+                        </div>
+                                                    <!-- Download Files -->
+                                    
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pFiles">
+                            			<button class="accordion-button bg-light ps-2 pt-2 fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pFiles_" aria-expanded="true" aria-controls="pFiles_"><i class="fa-solid fa-file-lines me-2 mt-1"></i>Files</button>
+                            		</h2>
+                            		<div id="pFiles_" class="accordion-collapse collapse show" aria-labelledby="pFiles">
+                            			<div class="accordion-body p-2">
+            							                            	<div class="p-2" id="dv_ar_files">
+                        			                        				<div class="mb-2"><a href="./?_action=xml&amp;article=245565" target="_blank" class="tag_a pdf_link"><i class="fa fa-file-code-o text-orange fa-solid fa-code text-warning me-2" ></i> XML</a></div>
+                       				                         				<div class="mb-2"><a href="./article_245565_1eb9a88f9debce325bf8f42208396d60.pdf" target="_blank" class="tag_a pdf_link"><i class="fa fa-file-pdf-o text-red  fa-solid fa-file-pdf text-danger me-2" ></i> PDF <span dir="ltr" class="badge bg-light px-3 text-dark">1.37 M</span></a></div>
+                       				                                 <!-- Suplement Files -->
+                           		                                    	<div class="my-4">
+                                    	                                    	<audio class="col-12" controls preload="none" title="AJNM-2607-1041.mp3">
+                                    		<source src="./data/advjnm/fulltext/245565_0_34_1792075426.mp3">
+                                    	</audio>
+                                    	                                    	<div class="text-center"><small></small></div>
+                                    	</div>
+                                                                        <div class="row">
+                                                                        </div>
+            					                    			</div>
+                			                            			
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+                                                                        
+                                                        
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pDates">
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pDates_" aria-expanded="true" aria-controls="pDates_"><i class="fa-solid fa-clock-rotate-left me-2"></i>History</button>
+                            		</h2>
+                            		<div id="pDates_" class="accordion-collapse collapse" aria-labelledby="pDates">
+                            			<div class="accordion-body p-1 px-1">
+                            			
+                                		<ul class="list-group px-0">
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Receive Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">09 July 2026</span></li>
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Revise Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">16 July 2026</span></li>
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Accept Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">10 August 2026</span></li>
+                                                                        			</ul>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>  
+                                          
+            								           		   
+            
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pShare">
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pShare_" aria-expanded="true" aria-controls="pShare_"><i class="fa-solid fa-share-nodes me-2"></i>Share</button>
+                            		</h2>
+                            		<div id="pShare_" class="accordion-collapse collapse" aria-labelledby="pShare">
+                            			<div class="accordion-body p-3">
+                			    	                				    	<div class="row">
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_xtwitter" href="https://x.com/share?url=https://ajnm.samipubco.com/article_245565.html&amp;text=Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate" target="_blank" data-bs-toggle="tooltip" title="X-Twitter">
+                							<i class="fa-brands fa-x-twitter fa-2x m-1"></i>
+                						</a>
+                						</div>
+                				    	<div class="col-3 text-center social_icon p-1">
+                						<a id="share_facebook" href="https://www.facebook.com/sharer.php?u=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Facebook">
+                							<i class="fa-brands fa-square-facebook fa-2x m-1 "></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_mendeley" href="https://www.mendeley.com/import/?url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Mendeley">
+                							<i class="fa-brands fa-mendeley fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Linkedin">
+            								<i class="fa-brands fa-linkedin fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+            							<a id="share_instagram" href="https://www.instagram.com/?url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Instagram">
+            								<i class="fa-brands fa-instagram fa-2x m-1"></i>
+            							</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_email" class="js_click pointer_cursor" data-handler="act" data-param_a="email" data-bs-toggle="tooltip" title="Email">
+                							<i class="fa-regular fa-envelope fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_print" class="js_click pointer_cursor" data-handler="printDiv" data-param_a="dv_artcl" data-bs-toggle="tooltip" title="Print">
+                							<i class="fa-solid fa-print fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                 						<a id="share_stumble" href="https://mix.com/mixit?su=submit&url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="StumbleUpon">
+                							<i class="fa-brands fa-stumbleupon-circle fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_acedemia" class="" href="https://www.academia.edu/" target="_blank" data-bs-toggle="tooltip" title="Academia">
+                							<i class="ai ai-academia fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_sems" href="https://www.semanticscholar.org/" target="_blank" data-bs-toggle="tooltip" title="Semantic scholar">
+                							<i class="ai ai-semantic-scholar fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1 d-none">
+                						<a id="share_reddit" href="https://www.reddit.com/submit?url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Reddit">
+                							<i class="fa-brands fa-square-reddit fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_rg" href="https://www.researchgate.net/" target="_blank" data-bs-toggle="tooltip" title="Research Gate">
+                							<i class="fa-brands fa-researchgate fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                 						<a id="share_blogger" href="https://www.blogger.com/blog-this.g?u=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Blogger">
+                							<i class="fa-brands fa-blogger fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_pinterest" href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Pinterest">
+                							<i class="fa-brands fa-square-pinterest fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_digg" href="https://www.digg.com/submit?https://ajnm.samipubco.com/article_245565.html&title=Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate" target="_blank" data-bs-toggle="tooltip" title="Digg">
+                							<i class="fa-brands fa-digg fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_delicious" href="https://del.icio.us/post?url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Delicious">
+                							<i class="fa-brands fa-delicious fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_skype" href="https://web.skype.com/share?url=https://ajnm.samipubco.com/article_245565.html" target="_blank" data-bs-toggle="tooltip" title="Skype">
+                							<i class="fa-brands fa-skype fa-2x m-1"></i>
+                						</a>
+                            			</div></div>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+            
+                            <!-- Cite This Article -->
+                            
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pHowCite" >
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#ppHowCite" aria-expanded="true" aria-controls="ppHowCite"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>How to cite</button>
+                            		</h2>
+                            		<div id="ppHowCite" class="accordion-collapse collapse" aria-labelledby="pHowCite">
+                            			<div class="accordion-body p-2">
+                                            <ul class="list-group p-1" dir="ltr">
+                                                <li class="list-group-item border-0"><a class="tag_a"  href="./?_action=export&rf=ris&rc=245565">RIS</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=enw&rc=245565">EndNote</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=ris&rc=245565">Mendeley</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=bibtex&rc=245565">BibTeX</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-apa">APA</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-mla">MLA</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-harvard">HARVARD</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-chicago">CHICAGO</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-vancouver">VANCOUVER</a></li>
+                                                                                            </ul>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>  
+                                          
+            
+                            <!-- Article Statastic -->
+                                                        
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pStat">
+                            			<button class="accordion-button bg-light ps-2 pt-2 fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#ppStat" aria-expanded="true" aria-controls="ppStat"><i class="fa-solid fa-chart-simple me-2"></i>Statistics</button>
+                            		</h2>
+                            		<div id="ppStat" class="accordion-collapse collapse show" aria-labelledby="pStat">
+                            			<div class="accordion-body p-2">
+                            				<table class="table table-sm table-borderless ">
+                                                                                                    <tr><td><a class="tag_a">Article View</a></td> <td dir="ltr"> <span class="badge bg-light text-dark px-3">62</span></td></tr>
+                                                                                                    <tr><td><a class="tag_a">PDF Download</a></td> <td dir="ltr"> <span class="badge bg-light text-dark px-3">41</span></td></tr>
+                                                                                            </table>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>                
+            
+                                    				</div>
+    				</div>
+            </div>
+            
+                <div class="col-md-3 col-sm-12 col-xs-12 order-md-1">
+                
+<div class="accordion shadow-sm mb-3">
+    <div class="card my-2 rounded-0" id="dv_home_search">
+        <div class="card-body px-2 pt-4">
+            <div class="searchBox">
+                <form action="./" method="get">
+                    <input type="hidden" name="_action" value="article">
+                    <div class="input-group">
+                        <input class="form-control rounded-0" type="text" name="keywords" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary rounded-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="ps-1 pt-1"><a href="./?_action=advSearch">Advanced Search</a></div>
+        </div>
+    </div>
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_home">
+        			<a href="././" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Home</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_browse">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_browse_" aria-expanded="true" aria-controls="pmenu_browse_">Browse</button>
+            		</h2>
+            		<div id="pmenu_browse_" class="accordion-collapse collapse" aria-labelledby="pmenu_browse">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./?_action=current">Current Issue</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=issue">By Issue</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=author">By Author</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=subject">By Subject</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./author.index">Author Index</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./keyword.index">Keyword Index</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_26794">
+        			<a href="./page_2852.html" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >A-Z Journals</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_29046">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_29046_" aria-expanded="true" aria-controls="pmenu_29046_">About  Publisher</button>
+            		</h2>
+            		<div id="pmenu_29046_" class="accordion-collapse collapse" aria-labelledby="pmenu_29046">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_3319.html">About  Publisher</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3320.html">The DNA of Sami Publishing Company</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3321.html">A Letter to Future Generations</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3161.html">SPC Publisher&#039;s Policies</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2966.html">Please follow SPC Publisher channels</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_info">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_info_" aria-expanded="true" aria-controls="pmenu_info_">Journal Info</button>
+            		</h2>
+            		<div id="pmenu_info_" class="accordion-collapse collapse" aria-labelledby="pmenu_info">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./journal/about">About Journal</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/aim_scope">Aims and Scope</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process?ethics">Publication Ethics</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3423.html">Publisher, Ownership and Financial Support</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3626.html">Editorial &amp; Publication Ethics Policy Manual</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2856.html">Journal Policies and Publication Standards</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2861.html">Publisher Business Model</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2850.html">Article Processing Charges</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2860.html">Publication Cycle-Process Flowchart</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3627.html">Journal Resources &amp; Quick Access</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process">Peer Review Process</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2857.html">Open Access Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2863.html">Self-Archiving Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3426.html">Privacy Statement</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3394.html">Journal Identity Profile</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/metrics">Journal Metrics</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2851.html">Benefits for Authors</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/links">Related Links</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/faq">FAQ</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./news">News</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_29074">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_29074_" aria-expanded="true" aria-controls="pmenu_29074_">Editorial Governance Manual</button>
+            		</h2>
+            		<div id="pmenu_29074_" class="accordion-collapse collapse" aria-labelledby="pmenu_29074">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_3322.html">Editorial &amp; Publishing Governance</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3347.html">Editorial Philosophy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3350.html">Copyright &amp; Licensing Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3348.html">Diamond Open Access Philosophy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3351.html">Corrections, Retractions and Expressions of Concern Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3352.html">Appeals and Complaints Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3353.html">Publication Ethics Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3630.html">Authorship and Contributorship Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3354.html">Conflict of Interest Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3355.html">AI and Generative Technologies Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3356.html">Data Availability Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3357.html">Editorial Independence Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3358.html">Research Misconduct Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3359.html">Archiving and Digital Preservation Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3360.html">Operational Excellence</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3379.html">Journal Statistics and Geographic Diversity</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3625.html">SPEGF Core Governance Document</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3631.html">Quality Assurance and Continuous Improvement</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_indexing">
+        			<a href="./journal/indexing" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Indexing and Abstracting</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_edb">
+        			<a href="./journal/editorial.board" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Editorial Board</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_aug">
+        			<a href="./journal/authors.note" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Guide for Authors</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_submit">
+        			<a href="./author" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Submit Manuscript</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_26802">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_26802_" aria-expanded="true" aria-controls="pmenu_26802_">Editor Page</button>
+            		</h2>
+            		<div id="pmenu_26802_" class="accordion-collapse collapse" aria-labelledby="pmenu_26802">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_2854.html">Editors</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2853.html">Editorial Policies</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2855.html">Guidelines for Guest Editors</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_rev">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_rev_" aria-expanded="true" aria-controls="pmenu_rev_">Reviewers</button>
+            		</h2>
+            		<div id="pmenu_rev_" class="accordion-collapse collapse" aria-labelledby="pmenu_rev">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_2862.html">Reviewers</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2858.html">Peer Review Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process">Peer Review Process</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_cu">
+        			<a href="./journal/contact.us" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Contact Us</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_27273">
+        			<a href="./page_2908.html" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Using &amp; citation</a>
+        		</h2>
+			</div>
+		</div>			
+    
+</div>                </div>
+            
+        </div>
+	</div>
+</div></div>
+
+<div id="cite-apa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="apa" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="apa">APA</h6>
+			</div>
+			<div class="modal-body">
+				<p> Ahmadi, M. (2026). Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate. <em>Advanced Journal of Nanochemistry and Medicine</em>, <em>2</em>(3), 216–228. https://doi.org/10.48309/ajnm.2026.584345.1041</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-mla" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mla" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="mla">MLA</h6>
+			</div>
+			<div class="modal-body">
+				<p> Ahmadi, M. "Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate", <em>Advanced Journal of Nanochemistry and Medicine</em>, 2, 3, 2026, 216–228. doi: 10.48309/ajnm.2026.584345.1041</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-harvard" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="harvard" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="harvard">HARVARD</h6>
+			</div>
+			<div class="modal-body">
+				<p> Ahmadi, M. (2026). 'Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate', <em>Advanced Journal of Nanochemistry and Medicine</em>, 2(3), pp. 216–228. doi: 10.48309/ajnm.2026.584345.1041</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-chicago" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="chicago" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="chicago">CHICAGO</h6>
+			</div>
+			<div class="modal-body">
+				<p> Ahmadi, M., "Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate." Advanced Journal of Nanochemistry and Medicine, 2 3 (2026): 216–228,  doi: 10.48309/ajnm.2026.584345.1041</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-vancouver" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vancouver" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="vancouver">VANCOUVER</h6>
+			</div>
+			<div class="modal-body">
+				<p>Ahmadi M. Molecular dynamics simulation and conformational stability analysis of HPV-16 E6 oncoprotein&ndash;ligand complexes: cilostazol as a promising stable candidate. Adv. J. Nanochem. Med. 2026;2(3):216–228. doi: 10.48309/ajnm.2026.584345.1041</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+    <footer>
+        <div id="footer" class="container-fluid pt-3">
+            <div class="overlay"></div>
+                <div class="row equal widgetList">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox">
+                            <ul class="list-group">
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_home"><a href="./">Home</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_about"><a href="./journal/about">About Journal</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_Edb"><a href="./journal/editorial.board">Editorial Board</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_submit"><a href="./author">Submit Manuscript</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_contactus"><a href="./journal/contact.us">Contact Us</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_sitemap"><a href="./sitemap.xml?usr">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox news">
+                            <!-- Latest News -->
+                            <h5 class="letter-spacing-1">News</h5>
+                            <ul class="footer-posts list-unstyled">
+                                                            </ul>
+                            <!-- /Latest News -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 margin-bottom-20">
+                        <div class="widgetBox"></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox">
+        					<h5 class="">Newsletter Subscription</h5>
+        					<p>Subscribe to the journal newsletter and receive the latest news and updates</p>
+        
+        					<form class="validate" action="" method="post" data-success="Subscription saved successfully." data-toastr-position="bottom-right">
+        						        						<input type="hidden" name="_token" value="c7dadc12c327471011495cc663a057fd45e9a506e33302ac"/>
+                                <div class="input-group">
+                                 	<span class="input-group-text" id=""><i class="fa-regular fa-envelope"></i></span>
+                                    <input class="form-control mr-2" type="email" name="email" maxlength="40" aria-label="Enter your Email">
+                                    <button class="btn btn-primary" type="button" id="btn_sbscrb">Subscribe</button>
+                                </div>
+        					</form>
+
+					<div class="mt-3">
+					    <ul class="list-inline">
+					
+												<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://whatsapp.com/channel/0029VaGWFVT3rZZij5vxI21E" target="_blank" data-bs-toggle="tooltip" data-bs-title="Whatsapp" title="Whatsapp">
+							<i class="fa-brands fa-square-whatsapp fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://t.me/Sami_Publishing_Company" target="_blank" data-bs-toggle="tooltip" data-bs-title="Telegram" title="Telegram">
+							<i class="fa-brands fa-telegram fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://youtube.com/@samipublishingcompany?si=p1FEA6oKDzlKXjsN" target="_blank" data-bs-toggle="tooltip" data-bs-title="Youtube" title="Youtube">
+							<i class="fa-brands fa-youtube fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://www.instagram.com/sami_publishing_companyllc?igsh=ZHF4azB6NWFjbnB6&utm_source=qr" target="_blank" data-bs-toggle="tooltip" data-bs-title="Instagram" title="Instagram">
+							<i class="fa-brands fa-instagram fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://www.linkedin.com/groups/11810042/" target="_blank" data-bs-toggle="tooltip" data-bs-title="Linkedin" title="Linkedin">
+							<i class="fa-brands fa-linkedin fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://x.com/AJNM2025" target="_blank" data-bs-toggle="tooltip" data-bs-title="X-Twitter" title="X-Twitter">
+							<i class="fa-brands fa-x-twitter fa-2x m-1"></i>							
+							</a></li>
+													<li class="list-inline-item mx-0 social_icon"><a class="" href="./ju.rss" data-bs-toggle="tooltip" data-bs-title="RSS" data-bs-title="RSS"><i class="fa-solid fa-square-rss fa-2x m-1"></i></a></li>
+					</ul>
+					</div>
+						</div>
+                    </div>
+                </div>
+                <div class="copyright" style="position: relative">
+                &copy; Journal management system. <span id='sp_crt'>designed by <a target='_blank' href='https://www.sinaweb.net/'>sinaweb</a></span> 
+                </div>
+            </div>
+        </footer>
+
+		<button class="btn btn-sm btn-primary position-fixed bottom-0 end-0 translate-middle d-none shadow-sm  js_click pointer_cursor" data-handler="scrollToTop"  data-param_a="" id="back-to-up"><i class="fa-solid fa-chevron-up"></i></button>
+        <!-- user defined scripts-->
+        
+        <!-- Extra Script Scripts -->
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"38b40ebbec3043e5a856c4f5f1e40cd2","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+<div id="actn_modal" class="modal fade" tabindex="-1">
+	<div id="modal_dlg" class="modal-dialog modal_aw modal-lg">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn px-1 float-end" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark text-secondary"></i></button>
+				<span class="modal-title"></span>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+

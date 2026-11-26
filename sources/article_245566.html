@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    	<meta charset="utf-8" />
+    	<title>Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers</title>
+    	<link rel="shortcut icon" type="image/ico" href="./data/advjnm/coversheet/favicon.ico" />
+    	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    
+    	<!-- user defined metatags -->
+    	
+		<meta name="keywords" content="Nanoparticle,Gastrointestinal Cancers,Drug delivery systems,Biomarkers,Bioinformatics,RNA-Seq" />
+		<meta name="description" content="Gastrointestinal cancers (GIC) are leading causes of cancer mortality with limited therapeutic options. Nanomedicine offers targeted delivery, reduced toxicity, and enhanced efficacy in GIC; however, the molecular response to these therapies, particularly nanoparticle therapy, remains unclear. This study analyzed three RNA-Seq datasets representing three therapeutic modalities: Ramucirumab (an anti-VEGFR2 monoclonal antibody) in gastric cancer; Anti-miR-17 (an anti-miRNA oligonucleotide) in hepatocellular carcinoma; and β-cyclodextrin-EDTA-Fe₃O₄ nanoparticles (CPT-CEF) in colorectal cancer. Among these, only CPT-CEF represents a nanoparticle-based nanomedicine. Differentially expressed genes (DEGs) were identified via DESeq2 (|log₂FC|≥1, adj.P≤0.05), followed by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis. Treatment with these modalities, particularly the CPT-CEF nanoparticle formulation, significantly modulated metabolic pathways (carbon metabolism, purine/pyrimidine metabolism, and oxidative phosphorylation), DNA replication, and ribosome biogenesis. A core set of genes (MCM2, MCM5, MCM7, POLA2, FEN1, RNASEH2A, POLD1, POLD2, RNASEH1, EPHX2, RRM2, CCNA2, PLK1, CHEK1, and TOP2A) was consistently dysregulated in GIC and reversed upon treatment. These genes regulate cell cycle progression, DNA repair, and metabolic reprogramming, serving as promising biomarkers for therapy efficacy, particularly for nanoparticle-based treatment, and potential targets for nanocarrier-based delivery. The findings provide a molecular rationale for smart nanotherapeutics, aligning with nanomaterials and medicinal chemistry. This in silico strategy offers a cost-effective approach to identify novel biomarkers and therapeutic targets, accelerating personalized therapy, including nanomedicine, for GIC." />
+		<meta name="title" content="Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers" />
+		<meta name="googlebot" content="NOODP" />
+		<meta name="citation_title" content="Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers" />
+		<meta name="citation_author" content="Hadizadeh, Morteza" />
+		<meta name="citation_author_institution" content="Physiology Research Center, Institute of Neuropharmacology, Kerman University of Medical Sciences, Kerman, Iran" />
+		<meta name="citation_author" content="Askari, Nahid" />
+		<meta name="citation_author_institution" content="Department of Biotechnology, Institute of Science and High Technology and Environmental Sciences, Graduate University of Advanced Technology, Kerman, Iran" />
+		<meta name="citation_abstract" content="Gastrointestinal cancers (GIC) are leading causes of cancer mortality with limited therapeutic options. Nanomedicine offers targeted delivery, reduced toxicity, and enhanced efficacy in GIC; however, the molecular response to these therapies, particularly nanoparticle therapy, remains unclear. This study analyzed three RNA-Seq datasets representing three therapeutic modalities: Ramucirumab (an anti-VEGFR2 monoclonal antibody) in gastric cancer; Anti-miR-17 (an anti-miRNA oligonucleotide) in hepatocellular carcinoma; and β-cyclodextrin-EDTA-Fe₃O₄ nanoparticles (CPT-CEF) in colorectal cancer. Among these, only CPT-CEF represents a nanoparticle-based nanomedicine. Differentially expressed genes (DEGs) were identified via DESeq2 (|log₂FC|≥1, adj.P≤0.05), followed by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis. Treatment with these modalities, particularly the CPT-CEF nanoparticle formulation, significantly modulated metabolic pathways (carbon metabolism, purine/pyrimidine metabolism, and oxidative phosphorylation), DNA replication, and ribosome biogenesis. A core set of genes (MCM2, MCM5, MCM7, POLA2, FEN1, RNASEH2A, POLD1, POLD2, RNASEH1, EPHX2, RRM2, CCNA2, PLK1, CHEK1, and TOP2A) was consistently dysregulated in GIC and reversed upon treatment. These genes regulate cell cycle progression, DNA repair, and metabolic reprogramming, serving as promising biomarkers for therapy efficacy, particularly for nanoparticle-based treatment, and potential targets for nanocarrier-based delivery. The findings provide a molecular rationale for smart nanotherapeutics, aligning with nanomaterials and medicinal chemistry. This in silico strategy offers a cost-effective approach to identify novel biomarkers and therapeutic targets, accelerating personalized therapy, including nanomedicine, for GIC." />
+		<meta name="citation_id" content="245566" />
+		<meta name="citation_publication_date" content="2026/09/01" />
+		<meta name="citation_date" content="2026-09-01" />
+		<meta name="citation_journal_title" content="Advanced Journal of Nanochemistry and Medicine" />
+		<meta name="citation_issn" content="3150-4248" />
+		<meta name="citation_volume" content="2" />
+		<meta name="citation_issue" content="3" />
+		<meta name="citation_firstpage" content="229" />
+		<meta name="citation_lastpage" content="240" />
+		<meta name="citation_publisher" content="Sami Publishing Company" />
+		<meta name="citation_doi" content="10.48309/ajnm.2026.584690.1044" />
+		<meta name="DC.Identifier" content="10.48309/ajnm.2026.584690.1044" />
+		<meta name="citation_abstract_html_url" content="https://ajnm.samipubco.com/article_245566.html" />
+		<meta name="citation_fulltext_html_url" content="https://ajnm.samipubco.com/article_245566.html" />
+		<meta name="citation_pdf_url" content="https://ajnm.samipubco.com/article_245566_5f51f8d10d6f5fcbdf3b581b9d2a007f.pdf" />
+		<meta name="DC.Title" content="Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers" />
+		<meta name="DC.Source" content="Advanced Journal of Nanochemistry and Medicine" />
+		<meta name="DC.Date" content="01/09/2026" />
+		<meta name="DC.Date.issued" content="2026-09-01" />
+		<meta name="DC.Format" content="application/pdf" />
+		<meta name="DC.Contributor" content="Hadizadeh, Morteza" />
+		<meta name="DC.Contributor" content="Askari, Nahid" />
+		<meta property="og:title" content="Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers" />
+		<meta property="og:type" content="article" />
+		<meta property="og:description" content="Gastrointestinal cancers (GIC) are leading causes of cancer mortality with limited therapeutic options. Nanomedicine offers targeted delivery, reduced toxicity, and enhanced efficacy in GIC; however, the molecular response to these therapies, particularly nanoparticle therapy, remains unclear. This study analyzed three RNA-Seq datasets representing three therapeutic modalities: Ramucirumab (an anti-VEGFR2 monoclonal antibody) in gastric cancer; Anti-miR-17 (an anti-miRNA oligonucleotide) in hepatocellular carcinoma; and β-cyclodextrin-EDTA-Fe₃O₄ nanoparticles (CPT-CEF) in colorectal cancer. Among these, only CPT-CEF represents a nanoparticle-based nanomedicine. Differentially expressed genes (DEGs) were identified via DESeq2 (|log₂FC|≥1, adj.P≤0.05), followed by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis. Treatment with these modalities, particularly the CPT-CEF nanoparticle formulation, significantly modulated metabolic pathways (carbon metabolism, purine/pyrimidine metabolism, and oxidative phosphorylation), DNA replication, and ribosome biogenesis. A core set of genes (MCM2, MCM5, MCM7, POLA2, FEN1, RNASEH2A, POLD1, POLD2, RNASEH1, EPHX2, RRM2, CCNA2, PLK1, CHEK1, and TOP2A) was consistently dysregulated in GIC and reversed upon treatment. These genes regulate cell cycle progression, DNA repair, and metabolic reprogramming, serving as promising biomarkers for therapy efficacy, particularly for nanoparticle-based treatment, and potential targets for nanocarrier-based delivery. The findings provide a molecular rationale for smart nanotherapeutics, aligning with nanomaterials and medicinal chemistry. This in silico strategy offers a cost-effective approach to identify novel biomarkers and therapeutic targets, accelerating personalized therapy, including nanomedicine, for GIC." />
+		<meta property="og:url" content="https://ajnm.samipubco.com/article_245566.html" />    
+    
+    	<!-- user defined metatags-->
+    	            <link href="./themes/base/assets/css/bootstrap.min.css" rel="stylesheet" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9">
+    		<link href=" ./themes/base/front/assets/css/gfonts-OpenSans.css" rel="stylesheet" type="text/css"  nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9"/>
+                <link href="./themes/base/assets/css/font-awesome.min.css" rel="stylesheet" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9">
+        <link href="./themes/base/assets/css/select2.min.css" rel="stylesheet" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9">
+        <link href="./themes/base/assets/css/select2-bootstrap-theme.min.css" rel="stylesheet" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9">
+        
+    	<link href="./themes/theme4/front/assets/css/style.css" rel="stylesheet" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9">
+    	<link rel="alternate" type="application/rss+xml" title="RSS feed" href="./ju.rss" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9" />
+    	<link href="./data/advjnm/coversheet/stl_front.css?v=0.15" rel="stylesheet" type="text/css" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9" />
+    	<link rel="stylesheet" href="./inc/css/print.css" media="print" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9">
+    	    
+    	<!-- Feed-->
+    	<link href="./data/advjnm/coversheet/stl_front.css?v=0.80" rel="stylesheet" type="text/css" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9" />
+    	<script type="text/javascript" src="./themes/base/assets/js/app.js" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9"></script>
+    
+    
+    	<!-- Extra Style Scripts -->
+    	<link href="https://ajnm.samipubco.com/article_245566.html" rel="canonical" />    
+    	<!-- Extra Script Scripts -->
+    	    
+<script type="application/ld+json" nonce="b3c0593019e951ef993929bd052ca07f06de609c3765bca9">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers",
+  "description": "Gastrointestinal cancers (GIC) are leading causes of cancer mortality with limited therapeutic options. Nanomedicine offers targeted delivery, reduced toxicity, and enhanced efficacy in GIC; however, the molecular response to these therapies, particularly nanoparticle therapy, remains unclear. This study analyzed three RNA-Seq datasets representing three therapeutic modalities: Ramucirumab (an anti-VEGFR2 monoclonal antibody) in gastric cancer; Anti-miR-17 (an anti-miRNA oligonucleotide) in hepatocellular carcinoma; and β-cyclodextrin-EDTA-Fe₃O₄ nanoparticles (CPT-CEF) in colorectal cancer. Among these, only CPT-CEF represents a nanoparticle-based nanomedicine. Differentially expressed genes (DEGs) were identified via DESeq2 (|log₂FC|≥1, adj.P≤0.05), followed by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis. Treatment with these modalities, particularly the CPT-CEF nanoparticle formulation, significantly modulated metabolic pathways (carbon metabolism, purine/pyrimidine metabolism, and oxidative phosphorylation), DNA replication, and ribosome biogenesis. A core set of genes (MCM2, MCM5, MCM7, POLA2, FEN1, RNASEH2A, POLD1, POLD2, RNASEH1, EPHX2, RRM2, CCNA2, PLK1, CHEK1, and TOP2A) was consistently dysregulated in GIC and reversed upon treatment. These genes regulate cell cycle progression, DNA repair, and metabolic reprogramming, serving as promising biomarkers for therapy efficacy, particularly for nanoparticle-based treatment, and potential targets for nanocarrier-based delivery. The findings provide a molecular rationale for smart nanotherapeutics, aligning with nanomaterials and medicinal chemistry. This in silico strategy offers a cost-effective approach to identify novel biomarkers and therapeutic targets, accelerating personalized therapy, including nanomedicine, for GIC.",
+  "author":[{"@type":"Person","name":"Morteza Hadizadeh","url":"https:\/\/orcid.org\/0000-0002-8866-0737"},{"@type":"Person","name":"Nahid Askari","url":"https:\/\/orcid.org\/0000-0002-9462-1144"}],
+"headline":"Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers",
+      "datePublished": "2026-09-01T00:00:00+00:00",
+      "dateModified": "2026-10-29T18:01:03+00:00",
+      "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ajnm.samipubco.com/article_245566.html"
+  }
+}
+</script>    
+	    </head>
+
+	<body dir="ltr"  >
+
+	<section id="topbar" class="pt-1">
+		<div class="container-fluid">
+  		<div class="row mb-1">
+			<div class="col-md-5">
+							</div>
+  			<div class="col-md-7 col-sm-7">
+				<ul class="list-inline d-flex my-0 justify-content-end">
+									<li class="list-item border-0 px-0 bg-light"><a class="btn btn-outline-secondary btn-sm btn-link border-0 badge py-2 pe-3 rounded-1" href="./contacts"><i class="fa-regular fa-circle-user"></i> Login</a></li>
+					<li class="list-item ms-2 border-0 px-0 bg-light"><a class="btn btn-outline-secondary btn-sm btn-link border-0 badge py-2 pe-3 rounded-1" href="./contacts?_action=signup"> Register</a></li>
+													
+				
+				</ul>
+			</div>
+		</div>
+		</div>
+	</section>	
+	<header class="mb-3">	
+	<div class="brandBar py-1">
+		<div class="container-fluid border-primary position-relative">
+			<div class="row my-2">
+    			<div class="col-md-8 col-sm-8">
+    				<table>
+    				<tr>
+        				<td><a href="./" class="hdr_logo"><img class="logo me-2 img-fluid" src="./data/advjnm/coversheet/logo_en.png" onerror="this.style.display='none'"></a></td>
+        				<td class="ps-2"><a href="./" class="hdr_tttl"><h1 id="ju_header_title_m" class="lh-sm d-inline">Advanced Journal of Nanochemistry and Medicine</h1></a></td>
+        			</tr>
+        			</table>
+    			</div>
+        		<div class="col-md-4 col-sm-4 mt-auto">
+        			<div class=" d-flex align-items-bottom float-end" id="ReleasePeriod"><div class='row'>
+<div class="col-md-5" style="text-align:center">8<br/>h.index</div>
+<div class="col-md-7" style="text-align:center">7<br/>i10-index</div></div>
+        		</div>	
+    		</div>
+		</div>
+	</div>
+	</header>
+
+<div id="generalPage" class="container-fluid">
+    <div class="row equal">
+            <div class="pageContent">
+                <!-- bread breadcrumb -->
+<nav aria-label="breadcrumb mb-3">
+  <ol class="breadcrumb d-none d-md-flex">
+    <li class="breadcrumb-item"><a href="./" class="">Home</a></li>
+		 <li class="breadcrumb-item active" aria-current="page">
+	Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers	</li>
+</ol>
+</nav>                <div class="row flex-column flex-sm-row">
+                <div class="col-md-9 col-sm-12 col-xs-12 order-md-2 pb-5">
+                    <div class="row">
+                        <!-- CENTER -->
+                        <div class="col-lg-9 col-md-9 col-sm-8" id="dv_artcl">
+                            <!-- Current Issue -->
+                            <div>
+                            <h1 class="mb-2 text-break fs-5 text-justify " dir="ltr"><span class="article_title fw-bold"> <a href="./article_245566_5f51f8d10d6f5fcbdf3b581b9d2a007f.pdf" target="_blank">Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers</a></span></h1>
+                                <div>
+                                                
+                                                
+                                        <div class="mb-1">
+                                                                                    </div>
+            
+                                                                                    <p class="mb-1">Document Type : Original Article</p>
+                                                    
+                                                
+                                                                            <p class="p-1"><strong>Authors</strong></p>
+            
+                                        <div class="mb-2 " dir="ltr">
+                                                                                            <div class="me-3 d-inline">
+                                                    <a href="./?_action=article&amp;au=1813334&amp;_au=Morteza++Hadizadeh">Morteza  Hadizadeh</a>
+            
+                                                                                                            <sup class="ltr"><a class="" href="https://orcid.org/0000-0002-8866-0737" title="ORCID: 0000-0002-8866-0737" target="_blank"><i class="fa-brands fa-orcid fa-lg"></i></a></sup>
+                                                                
+                                                                                                            <sup><a href="#aff1" >1</a></sup>                                                                                                    </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a href="./?_action=article&amp;au=1813326&amp;_au=Nahid++Askari">Nahid  Askari</a>
+            
+                                                                                                            <sup><a href="/cdn-cgi/l/email-protection#9af4fbf2f3fefbe9f1fbe8f3dafdf7fbf3f6b4f9f5f7" title="Email to Corresponding Author"><i class="fa-regular fa-envelope" ></i></a></sup>
+                                                                                                            <sup class="ltr"><a class="" href="https://orcid.org/0000-0002-9462-1144" title="ORCID: 0000-0002-9462-1144" target="_blank"><i class="fa-brands fa-orcid fa-lg"></i></a></sup>
+                                                                
+                                                                                                            <sup><a href="#aff2" >2</a></sup>                                                                                                    </div>
+                                                                                    </div>
+            
+                                                                                    <p class="mb-1 " dir="ltr" id="aff1">
+                                                                                                    <sup>1</sup>
+                                                                                                Physiology Research Center, Institute of Neuropharmacology, Kerman University of Medical Sciences, Kerman, Iran                                            </p>
+                                                                                    <p class="mb-1 " dir="ltr" id="aff2">
+                                                                                                    <sup>2</sup>
+                                                                                                Department of Biotechnology, Institute of Science and High Technology and Environmental Sciences, Graduate University of Advanced Technology, Kerman, Iran                                            </p>
+                                                    
+                                                                                                                <div class="mb-1 " dir="ltr" id="ar_doi" title="DOI"><i class="ai ai-doi text-warning fa-lg me-1"></i> <span dir="ltr"><a href="https://doi.org/10.48309/ajnm.2026.584690.1044">https://doi.org/10.48309/ajnm.2026.584690.1044</a></span></div>
+                                                
+                                                
+                                        <div id="dv_ar_abs_lbl"><strong>Abstract</strong></div>
+                                        <div id="dv_ar_abs" class="padding_abstract text-break text-justify border-start border-3 p-3 my-2 " dir="ltr">Gastrointestinal cancers (GIC) are leading causes of cancer mortality with limited therapeutic options. Nanomedicine offers targeted delivery, reduced toxicity, and enhanced efficacy in GIC; however, the molecular response to these therapies, particularly nanoparticle therapy, remains unclear. This study analyzed three RNA-Seq datasets representing three therapeutic modalities: Ramucirumab (an anti-VEGFR2 monoclonal antibody) in gastric cancer; Anti-miR-17 (an anti-miRNA oligonucleotide) in hepatocellular carcinoma; and &beta;-cyclodextrin-EDTA-Fe₃O₄ nanoparticles (CPT-CEF) in colorectal cancer. Among these, only CPT-CEF represents a nanoparticle-based nanomedicine. Differentially expressed genes (DEGs) were identified via DESeq2 (|log₂FC|&ge;1, adj.P&le;0.05), followed by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis. Treatment with these modalities, particularly the CPT-CEF nanoparticle formulation, significantly modulated metabolic pathways (carbon metabolism, purine/pyrimidine metabolism, and oxidative phosphorylation), DNA replication, and ribosome biogenesis. A core set of genes (MCM2, MCM5, MCM7, POLA2, FEN1, RNASEH2A, POLD1, POLD2, RNASEH1, EPHX2, RRM2, CCNA2, PLK1, CHEK1, and TOP2A) was consistently dysregulated in GIC and reversed upon treatment. These genes regulate cell cycle progression, DNA repair, and metabolic reprogramming, serving as promising biomarkers for therapy efficacy, particularly for nanoparticle-based treatment, and potential targets for nanocarrier-based delivery. The findings provide a molecular rationale for smart nanotherapeutics, aligning with nanomaterials and medicinal chemistry. This <em>in silico</em> strategy offers a cost-effective approach to identify novel biomarkers and therapeutic targets, accelerating personalized therapy, including nanomedicine, for GIC.</div>
+            
+                                                
+                                                                                                                        <p class="p-1"><strong>Graphical Abstract</strong></p>
+                                                                                <div class="text-center"><a class="js_click pointer_cursor" data-handler="loadModal" data-param_a="Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers" data-param_b="data/advjnm/coversheet/511792934982.jpg"><img alt="Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers " src="data/advjnm/coversheet/511792934982.jpg" class="gr_abs_img img-fluid"/></a></div>
+                                                
+                                                
+                                                                            <p class="p-1"><strong>Keywords</strong></p>
+            
+                                        <div class="mb-2 " dir="ltr">
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=5849&amp;_kw=Nanoparticle" >Nanoparticle</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=668450&amp;_kw=Gastrointestinal+Cancers" >Gastrointestinal Cancers</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=144811&amp;_kw=Drug+Delivery+Systems" >Drug Delivery Systems</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=64092&amp;_kw=Biomarkers" >Biomarkers</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=67885&amp;_kw=Bioinformatics" >Bioinformatics</a>
+                                                </div>
+                                                                                            <div class="me-3 d-inline">
+                                                    <a class="tag_a" href="./?_action=article&amp;kw=71297&amp;_kw=RNA-Seq" >RNA-Seq</a>
+                                                </div>
+                                                                                    </div>
+                                                
+                                                                        <div class="pt-1"><strong>Subjects</strong></div>
+        
+                                    <ul class="block list-inline list-inline-seprator mb-2">
+                                                                                    <li class="px-2 pb-1">
+                                                <a href="./?_action=article&amp;sb=12154&amp;_sb=Cancer+research" >Cancer research</a>
+                                            </li>
+                                                                            </ul>
+                                                                    </div>
+            
+                                <hr>
+            
+                                            
+                                            
+                                            
+                                                                                                                                            						<div><p style="text-align: justify;"><strong>OPEN ACCESS</strong></p>
+<p style="text-align: justify;">&copy;2026 The author(s). This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article&rsquo;s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article&rsquo;s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit: <a href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a></p>
+<p style="text-align: justify;"><strong>PUBLISHER NOTE</strong></p>
+<p style="text-align: justify;">Sami Publishing Company remains neutral concerning jurisdictional claims in published maps and institutional affiliations.</p>
+<p style="text-align: justify;"><strong>CURRENT PUBLISHER</strong></p>
+<p style="text-align: justify;"><a href="http://www.samipubco.com/">Sami Publishing Company</a></p></div>
+                    			    
+            
+                                                                	<div class="page_break"></div>
+                                	<div>
+                                    <button class="btn pe-3 fw-bold fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneRef" aria-expanded="false" aria-controls="collapseOneRef"><i class="fa-solid expand_ico fa-plus fw-bolder me-1"></i> References</button>
+                                    <div class="collapse mt-1" id="collapseOneRef">
+                                      <div class="card card-body border-0 px-0 text-break text-justify">
+                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref1"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[1]</span><span style="mso-bookmark: Ref1;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Sung, H., Ferlay, J., Siegel, R.L., Laversanne, M., Soerjomataram, I., Jemal, A., Bray, F. </span></span><a href="https://acsjournals.onlinelibrary.wiley.com/doi/full/10.3322/caac.21834" target="_blank" rel="noopener"><span style="mso-bookmark: Ref1;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Global cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries.</span></span></a><span style="mso-bookmark: Ref1;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>CA: A Cancer Journal for Clinicians</em>, <strong>2021</strong>, 71, 209-249.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref2"></a><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[2]</span><span style="mso-bookmark: Ref2;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Bray, F., Laversanne, M., Sung, H., Ferlay, J., Siegel, R.L., Soerjomataram, I., Jemal, A. </span></span><a href="https://acsjournals.onlinelibrary.wiley.com/doi/full/10.3322/caac.21834"><span style="mso-bookmark: Ref2;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries</span></span></a><span style="mso-bookmark: Ref2;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">. <i>CA: A Cancer Journal for Clinicians</i>, <strong style="mso-bidi-font-weight: normal;">2024</strong>, 74(3), 229-263. </span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref3"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[3]</span><span style="mso-bookmark: Ref3;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Achyut, B.R., Yang, L. </span></span><a href="https://www.gastrojournal.org/article/S0016-5085(11)01083-3/fulltext" target="_blank" rel="noopener"><span style="mso-bookmark: Ref3;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Transforming growth factor-&beta; in the gastrointestinal and hepatic tumor microenvironment.</span></span></a><span style="mso-bookmark: Ref3;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Gastroenterology</em>, <strong>2011</strong>, 141, 1167-1178.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref4"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[4]</span><span style="mso-bookmark: Ref4;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Trabucco, S.E., Gowen, K., Maund, S.L., Sanford, E., Fabrizio, D.A., Hall, M.J., Yakirevich, E., Gregg, J.P., Stephens, P.J., <i>et al</i>. </span></span><a href="https://secure.jbs.elsevierhealth.com/action/getSharedSiteSession?redirect=https%3A%2F%2Fjmdjournal.org%2Fretrieve%2Fpii%2FS1525157819303587&amp;rc=0" target="_blank" rel="noopener"><span style="mso-bookmark: Ref4;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">A novel next-generation sequencing approach to detecting microsatellite instability and pan-tumor characterization of 1000 microsatellite instability&ndash;high cases in 67,000 patient samples.</span></span></a><span style="mso-bookmark: Ref4;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>The Journal of Molecular Diagnostics</em>, <strong>2019</strong>, 21, 1053-1066.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref5"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[5]</span><span style="mso-bookmark: Ref5;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Hanahan, D., Weinberg, R.A. </span></span><a href="https://cell.com/cell/retrieve/pii/S0092867411001279?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867411001279%3Fshowall%3Dtrue" target="_blank" rel="noopener"><span style="mso-bookmark: Ref5;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Hallmarks of cancer: The next generation.</span></span></a><span style="mso-bookmark: Ref5;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Cell</em>, <strong>2011</strong>, 144, 646-674.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref6"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[6]</span><span style="mso-bookmark: Ref6;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Quail, D.F., Joyce, J.A. </span></span><a href="https://www.nature.com/articles/nm.3394" target="_blank" rel="noopener"><span style="mso-bookmark: Ref6;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Microenvironmental regulation of tumor progression and metastasis.</span></span></a><span style="mso-bookmark: Ref6;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Nature Medicine</em>, <strong>2013</strong>, 19, 1423-1437.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref7"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[7]</span><span style="mso-bookmark: Ref7;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Hossen, S., Hossain, M.K., Basher, M.K., Mia, M.N.H., Rahman, M.T., Uddin, M.J. </span></span><a href="https://www.sciencedirect.com/science/article/pii/S2090123218300791?via%3Dihub" target="_blank" rel="noopener"><span style="mso-bookmark: Ref7;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Smart nanocarrier-based drug delivery systems for cancer therapy and toxicity studies: A review.</span></span></a><span style="mso-bookmark: Ref7;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Journal of Advanced Research</em>, <strong>2019</strong>, 15, 1-18.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref8"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[8]</span><span style="mso-bookmark: Ref8;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Peer, D., Karp, J.M., Hong, S., Farokhzad, O.C., Margalit, R., Langer, R. </span></span><a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9780429399039-2/nanocarriers-emerging-platform-cancer-therapy-dan-peer-jeffrey-karp-seungpyo-hong-omid-farokhzad-rimona-margalit-robert-langer"><span style="mso-bookmark: Ref8;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Nanocarriers as an emerging platform for cancer therapy.</span></span></a><span style="mso-bookmark: Ref8;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <i>Nano-Enabled Medical Applications</i>, <strong>2020</strong>, 61-91.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref9"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[9]</span><span style="mso-bookmark: Ref9;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Maeda, H., Wu, J., Sawa, T., Matsumura, Y., Hori, K. </span></span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168365999002485?via%3Dihub" target="_blank" rel="noopener"><span style="mso-bookmark: Ref9;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Tumor vascular permeability and the EPR effect in macromolecular therapeutics: a review.</span></span></a><span style="mso-bookmark: Ref9;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Journal of Controlled Release</em>, <strong>2000</strong>, 65, 271-284.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref10"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[10]</span><span style="mso-bookmark: Ref10;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Matsumura, Y., Maeda, H. </span></span><a href="https://aacrjournals.org/cancerres/article-abstract/46/12_Part_1/6387/490212"><span style="mso-bookmark: Ref10;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">A new concept for macromolecular therapeutics in cancer chemotherapy: mechanism of tumoritropic accumulation of proteins and the antitumor agent smancs</span></span></a><span style="mso-bookmark: Ref10;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">. <i>Cancer Research</i>, <strong>1986</strong>, 46, 6387-6392.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref11"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[11]</span><span style="mso-bookmark: Ref11;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Bertrand, N., Wu, J., Xu, X., Kamaly, N., Farokhzad, O.C. </span></span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169409X13002688?via%3Dihub" target="_blank" rel="noopener"><span style="mso-bookmark: Ref11;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Cancer nanotechnology: The impact of passive and active targeting in the era of modern cancer biology.</span></span></a><span style="mso-bookmark: Ref11;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Advanced Drug Delivery Reviews</em>, <strong>2014</strong>, 66, 2-25.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref12"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[12]</span><span style="mso-bookmark: Ref12;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Ensign, L.M., Cone, R., Hanes, J. </span></span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169409X11003036?via%3Dihub" target="_blank" rel="noopener"><span style="mso-bookmark: Ref12;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Oral drug delivery with polymeric nanoparticles: The gastrointestinal mucus barriers.</span></span></a><span style="mso-bookmark: Ref12;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Advanced Drug Delivery Reviews</em>, <strong>2012</strong>, 64, 557-570.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref13"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[13]</span><span style="mso-bookmark: Ref13;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Nosrati, H., Salehiabar, M., Fridoni, M., Abdollahifar, M.A., Kheiri Manjili, H., Davaran, S., Danafar, H. </span></span><a href="https://www.nature.com/articles/s41598-019-43650-4" target="_blank" rel="noopener"><span style="mso-bookmark: Ref13;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">New insight about biocompatibility and biodegradability of iron oxide magnetic nanoparticles: Stereological and in vivo MRI monitor.</span></span></a><span style="mso-bookmark: Ref13;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Scientific Reports</em>, <strong>2019</strong>, 9, 7173.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref14"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[14]</span><span style="mso-bookmark: Ref14;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Shi, J., Kantoff, P.W., Wooster, R., Farokhzad, O.C. </span></span><a href="https://www.nature.com/articles/nrc.2016.108" target="_blank" rel="noopener"><span style="mso-bookmark: Ref14;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Cancer nanomedicine: Progress, challenges and opportunities.</span></span></a><span style="mso-bookmark: Ref14;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Nature Reviews Cancer</em>, <strong>2017</strong>, 17, 20-37.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref15"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[15]</span><span style="mso-bookmark: Ref15;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Chen, G., Roy, I., Yang, C., Prasad, P.N. </span></span><a href="https://pubs.acs.org/chreay/article-abstract/116/5/2826/779949/Nanochemistry-and-Nanomedicine-for-Nanoparticle?redirectedFrom=fulltext" target="_blank" rel="noopener"><span style="mso-bookmark: Ref15;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Nanochemistry and nanomedicine for nanoparticle-based diagnostics and therapy.</span></span></a><span style="mso-bookmark: Ref15;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Chemical Reviews</em>, <strong>2016</strong>, 116, 2826-2885.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref16"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[16]</span><span style="mso-bookmark: Ref16;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Wang, B., Dong, Y.X., Wang, Y.L., Cao, J.T., Ma, S.H., Liu, Y.M. </span></span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0925400517312856?via%3Dihub" target="_blank" rel="noopener"><span style="mso-bookmark: Ref16;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Quenching effect of exciton energy transfer from CdS:Mn to Au nanoparticles: A highly efficient photoelectrochemical strategy for microRNA-21 detection.</span></span></a><span style="mso-bookmark: Ref16;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Sensors and Actuators B: Chemical</em>, <strong>2018</strong>, 254, 159-165.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref17"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[17]</span><span style="mso-bookmark: Ref17;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Zhang, L., Gu, F., Chan, J., Wang, A., Langer, R., Farokhzad, O. </span></span><a href="http://doi.wiley.com/10.1038/sj.clpt.6100400" target="_blank" rel="noopener"><span style="mso-bookmark: Ref17;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Nanoparticles in medicine: Therapeutic applications and developments.</span></span></a><span style="mso-bookmark: Ref17;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Clinical Pharmacology &amp; Therapeutics</em>, <strong>2008</strong>, 83(5), 761-769.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref18"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[18]</span><span style="mso-bookmark: Ref18;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Stark, R., Grzelak, M., Hadfield, J. </span></span><a href="https://www.nature.com/articles/s41576-019-0150-2" target="_blank" rel="noopener"><span style="mso-bookmark: Ref18;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">RNA sequencing: The teenage years.</span></span></a><span style="mso-bookmark: Ref18;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Nature Reviews Genetics</em>, <strong>2019</strong>, 20, 631-656.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref19"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[19]</span><span style="mso-bookmark: Ref19;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Wang, Z., Gerstein, M., Snyder, M. </span></span><a href="https://www.nature.com/articles/nrg2484" target="_blank" rel="noopener"><span style="mso-bookmark: Ref19;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">RNA-Seq: A revolutionary tool for transcriptomics.</span></span></a><span style="mso-bookmark: Ref19;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Nature Reviews Genetics</em>, <strong>2009</strong>, 10, 57-63.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref20"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[20]</span><span style="mso-bookmark: Ref20;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Katsuda, T., Kosaka, N., Ochiya, T. </span></span><a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/pmic.201300389" target="_blank" rel="noopener"><span style="mso-bookmark: Ref20;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">The roles of extracellular vesicles in cancer biology: Toward the development of novel cancer biomarkers.</span></span></a><span style="mso-bookmark: Ref20;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Proteomics</em>, <strong>2014</strong>, 14, 412-425.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref21"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[21]</span><span style="mso-bookmark: Ref21;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <span style="mso-no-proof: yes;">Poudineh, M., Sargent, E.H., Pantel, K., Kelley, S.O. </span></span></span><a href="https://www.nature.com/articles/s41551-018-0190-5"><span style="mso-bookmark: Ref21;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-no-proof: yes;">Profiling circulating tumour cells and other biomarkers of invasive cancers.</span></span></a><span style="mso-bookmark: Ref21;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-no-proof: yes;"> <i>Nature Biomedical Engineering</i>, <strong style="mso-bidi-font-weight: normal;">2018</strong>, 2(2), 72-84.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref22"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[22]</span><span style="mso-bookmark: Ref22;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Nel, A., Xia, T., Mädler, L., Li, N. </span></span><a href="https://www.science.org/doi/10.1126/science.1114397" target="_blank" rel="noopener"><span style="mso-bookmark: Ref22;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Toxic potential of materials at the nanolevel.</span></span></a><span style="mso-bookmark: Ref22;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Science</em>, <strong>2006</strong>, 311, 622-627.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref23"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[23]</span><span style="mso-bookmark: Ref23;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> DeBerardinis, R.J., Chandel, N.S. </span></span><a href="https://www.science.org/doi/10.1126/sciadv.1600200" target="_blank" rel="noopener"><span style="mso-bookmark: Ref23;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Fundamentals of cancer metabolism.</span></span></a><span style="mso-bookmark: Ref23;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Science Advances</em>, <strong>2016</strong>, 2, e1600200.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref24"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[24]</span><span style="mso-bookmark: Ref24;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Gan, Y., Li, Y., Li, T., Shu, G., Yin, G. </span></span><a href="https://www.dovepress.com/ccna2-acts-as-a-novel-biomarker-in-regulating-the-growth-and-apoptosis-peer-reviewed-article-CMAR" target="_blank" rel="noopener"><span style="mso-bookmark: Ref24;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">CCNA2 acts as a novel biomarker in regulating the growth and apoptosis of colorectal cancer.</span></span></a><span style="mso-bookmark: Ref24;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Cancer Management and Research</em>, <strong>2018</strong>, 10, 5113-5124.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref25"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[25]</span><span style="mso-bookmark: Ref25;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Lu, A.G., Feng, H., Wang, P.X.Z., Han, D.P., Chen, X.H., Zheng, M.H. </span></span><a href="https://www.wjgnet.com/1007-9327/full/v18/i34/4704.htm" target="_blank" rel="noopener"><span style="mso-bookmark: Ref25;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Emerging roles of the ribonucleotide reductase M2 in colorectal cancer and ultraviolet-induced DNA damage repair.</span></span></a><span style="mso-bookmark: Ref25;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>World Journal of Gastroenterology</em>, <strong>2012</strong>, 18(34), 4704-4713.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref26"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[26]</span><span style="mso-bookmark: Ref26;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Giner-Casares, J.J., Henriksen-Lacey, M., Coronado-Puchau, M., Liz-Marz&aacute;n, L.M. </span></span><a href="https://www.sciencedirect.com/science/article/pii/S1369702115002217?via%3Dihub" target="_blank" rel="noopener"><span style="mso-bookmark: Ref26;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Inorganic nanoparticles for biomedicine: where materials scientists meet medical research.</span></span></a><span style="mso-bookmark: Ref26;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Materials Today</em>, <strong>2016</strong>, 19, 19-28.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref27"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[27]</span><span style="mso-bookmark: Ref27;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Nel, A.E., M&auml;dler, L., Velegol, D., Xia, T., Hoek, E.M.V., Somasundaran, P., Klaessig, F., Castranova, V., Thompson, M. </span></span><a href="https://www.nature.com/articles/nmat2442" target="_blank" rel="noopener"><span style="mso-bookmark: Ref27;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Understanding biophysicochemical interactions at the nano&ndash;bio interface.</span></span></a><span style="mso-bookmark: Ref27;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Nature Materials</em>, <strong>2009</strong>, 8, 543-557.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref28"></a><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[28]</span><span style="mso-bookmark: Ref28;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Yarana, C., St. Clair, D.K. </span></span><a href="https://www.mdpi.com/2076-3921/6/4/75"><span style="mso-bookmark: Ref28;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Chemotherapy-induced tissue injury: An insight into the role of extracellular vesicles-mediated oxidative stress responses</span></span></a><span style="mso-bookmark: Ref28;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">. <i>Antioxidants</i>, <strong style="mso-bidi-font-weight: normal;">2017</strong>, 6(4), 75. </span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref29"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[29]</span><span style="mso-bookmark: Ref29;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Lei, Y., Tang, R., Xu, J., Wang, W., Zhang, B., Liu, J., Yu, X., Shi, S. </span></span><a href="https://link.springer.com/article/10.1186/s13045-021-01105-2" target="_blank" rel="noopener"><span style="mso-bookmark: Ref29;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Applications of single-cell sequencing in cancer research: Progress and perspectives.</span></span></a><span style="mso-bookmark: Ref29;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Journal of Hematology &amp; Oncology</em>, <strong>2021</strong>, 14, 91.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref30"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[30]</span><span style="mso-bookmark: Ref30;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Takahashi, T., Sano, B., Nagata, T., Kato, H., Sugiyama, Y., Kunieda, K., Kimura, M., Okano, Y., Saji, S. </span></span><a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1349-7006.2003.tb01411.x" target="_blank" rel="noopener"><span style="mso-bookmark: Ref30;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Polo‐like kinase 1 (PLK1) is overexpressed in primary colorectal cancers.</span></span></a><span style="mso-bookmark: Ref30;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Cancer Science</em>, <strong>2003</strong>, 94, 148-152.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref31"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[31]</span><span style="mso-bookmark: Ref31;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <span class="ltr refno1">Priyamvada, P., Ramaiah, S. </span></span></span><a href="https://onlinelibrary.wiley.com/doi/10.1002/jcb.26916" target="_blank" rel="noopener"><span style="mso-bookmark: Ref31;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; color: windowtext; text-decoration: none; text-underline: none;"><span style="mso-spacerun: yes;">&nbsp;</span></span></span><span style="mso-bookmark: Ref31;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Potential signature therapeutic biomarkers TOP2A, MAD2L1, and CDK1 in colorectal cancer: a systems biomedicine-based approach.</span></span></a><span style="mso-bookmark: Ref31;"><span style="mso-ansi-font-size: 12.0pt; mso-bidi-font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> </span></span><span style="mso-bookmark: Ref31;"><i><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-bidi-language: AR-SA;">Biochemical Genetics</span></i></span><span style="mso-bookmark: Ref31;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-bidi-language: AR-SA;">, <strong>2024</strong>, 62, 2166-2194.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref32"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[32]</span><span style="mso-bookmark: Ref32;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <span style="mso-no-proof: yes;">Beg, S., Rahman, M., Barkat, M.A., Ahmad, F.J. </span></span></span><a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=Lu-yDwAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;dq=Beg,+S.,+Rahman,+M.,+Barkat,+M.A.,+Ahmad,+F.J.+Nanomedicine+for+the+treatment+of+disease:+from+concept+to+application.+ed.,+CRC+Press,+2019,&amp;ots=Qv-3NFg3F2&amp;sig=N2sMn3a_oB8iyqDgIDMPazxqtfI"><span style="mso-bookmark: Ref32;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-no-proof: yes;">Nanomedicine for the treatment of disease: From concept to application.</span></span></a><span style="mso-bookmark: Ref32;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-no-proof: yes;"> ed., CRC Press, <strong>2019</strong>.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref33"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[33]</span><span style="mso-bookmark: Ref33;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Fumoto, S., Nishida, K. </span></span><a href="https://www.jstage.jst.go.jp/article/cpb/68/7/68_c20-00008/_article" target="_blank" rel="noopener"><span style="mso-bookmark: Ref33;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Co-delivery systems of multiple drugs using nanotechnology for future cancer therapy.</span></span></a><span style="mso-bookmark: Ref33;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Chemical and Pharmaceutical Bulletin</em>, <strong>2020</strong>, 68, 603-612.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref34"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[34]</span><span style="mso-bookmark: Ref34;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Aye, Y., Li, M., Long, M.J.C., Weiss, R.S. </span></span><a href="https://www.nature.com/articles/onc2014155" target="_blank" rel="noopener"><span style="mso-bookmark: Ref34;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Ribonucleotide reductase and cancer: Biological mechanisms and targeted therapies.</span></span></a><span style="mso-bookmark: Ref34;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Oncogene</em>, <strong>2014</strong>, 34, 2011-2021.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref35"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[35]</span><span style="mso-bookmark: Ref35;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Gali-Muhtasib, H., Kuester, D., Mawrin, C., Bajbouj, K., Diestel, A., Ocker, M., Habold, C., Foltzer-Jourdainne, C., Schoenfeld, P., <i>et al.</i> </span></span><a href="https://aacrjournals.org/cancerres/article/68/14/5609/541434/Thymoquinone-Triggers-Inactivation-of-the-Stress" target="_blank" rel="noopener"><span style="mso-bookmark: Ref35;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Thymoquinone triggers inactivation of the stress response pathway sensor CHEK1 and contributes to apoptosis in colorectal cancer cells.</span></span></a><span style="mso-bookmark: Ref35;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Cancer Research</em>, <strong>2008</strong>, 68, 5609-5618.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref36"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[36]</span><span style="mso-bookmark: Ref36;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Stern, S.T., Adiseshaiah, P.P., Crist, R.M. </span></span><a href="https://link.springer.com/article/10.1186/1743-8977-9-20" target="_blank" rel="noopener"><span style="mso-bookmark: Ref36;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Autophagy and lysosomal dysfunction as emerging mechanisms of nanomaterial toxicity.</span></span></a><span style="mso-bookmark: Ref36;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Particle and Fibre Toxicology</em>, <strong>2012</strong>, 9, 20.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref37"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[37]</span><span style="mso-bookmark: Ref37;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Liu, M.S., Zhao, H., Xu, C.X., Xie, P.B., Wang, W., Yang, Y.Y., Lee, W.H., Jin, Y., Zhou, H.Q. </span></span><a href="https://www.ovid.com/jnls/ajandrology/fulltext/10.4103/aja.aja_34_20~clinical-significance-of-ephx2-deregulation-in-prostate" target="_blank" rel="noopener"><span style="mso-bookmark: Ref37;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Clinical significance of EPHX2 deregulation in prostate cancer.</span></span></a><span style="mso-bookmark: Ref37;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Asian Journal of Andrology</em>, <strong>2021</strong>, 23, 109-115.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref38"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[38]</span><span style="mso-bookmark: Ref38;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Zhan, K., Bai, Y., Liao, S., Chen, H., Kuang, L., Luo, Q., Lv, L., Qiu, L., Mei, Z. </span></span><a href="https://www.spandidos-publications.com/mmr/24/3/650" target="_blank" rel="noopener"><span style="mso-bookmark: Ref38;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Identification and validation of EPHX2 as a prognostic biomarker in hepatocellular carcinoma.</span></span></a><span style="mso-bookmark: Ref38;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Molecular Medicine Reports</em>, <strong>2021</strong>, 24, 650.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref39"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[39]</span><span style="mso-bookmark: Ref39;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Irvine, D.J., Dane, E.L. </span></span><a href="https://www.nature.com/articles/s41577-019-0269-6" target="_blank" rel="noopener"><span style="mso-bookmark: Ref39;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Enhancing cancer immunotherapy with nanomedicine.</span></span></a><span style="mso-bookmark: Ref39;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Nature Reviews Immunology</em>, <strong>2020</strong>, 20, 321-334.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref40"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[40]</span><span style="mso-bookmark: Ref40;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Karimi, M., Ghasemi, A., Sahandi Zangabad, P., Rahighi, R., Moosavi Basri, S.M., Mirshekari, H., Amiri, M., Shafaei Pishabad, Z., Aslani, A. <i>et al.</i> <span style="mso-spacerun: yes;">&nbsp;</span></span></span><a href="https://pubs.rsc.org/cs/article-abstract/45/5/1457/475309" target="_blank" rel="noopener"><span style="mso-bookmark: Ref40;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Smart micro/nanoparticles in stimulus-responsive drug/gene delivery systems.</span></span></a><span style="mso-bookmark: Ref40;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Chemical Society Reviews</em>, <strong>2016</strong>, 45, 1457-1501.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref41"></a><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[41]</span><span style="mso-bookmark: Ref41;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Bartel, D.P. </span></span><a href="https://www.sciencedirect.com/science/article/abs/pii/S1044579X20302625?via%3Dihub"><span style="mso-bookmark: Ref41;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">MicroRNAs: Genomics, biogenesis, mechanism, and function</span></span></a><span style="mso-bookmark: Ref41;"><span style="font-size: 12.0pt; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">. <i>Cell</i>, <strong style="mso-bidi-font-weight: normal;">2004</strong>, 116(2), 281-297. </span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><a name="Ref43"></a><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[42] Morshedi, M., Taghavi, S.P., Pourali, G., Ravaei, F., Raisi, A., Arjmand, A., Asouri, S.A., Hamblin, M.R., Rahimian, N., Mahabady, M.K., Mahjoubin-Tehran, M., Mirzaei, H. </span><a href="https://link.springer.com/article/10.1186/s12935-025-04004-5"><span style="mso-bookmark: Ref43;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; text-decoration: none; text-underline: none;">Exploring the role of miR-221/222 in gastrointestinal cancers: implications for innovative therapeutic strategies</span></span></a><span style="mso-bookmark: Ref43;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">. <i>Cancer Cell International</i>, </span></span><span style="mso-bookmark: Ref43;"><strong><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">2025</span></strong></span><span style="mso-bookmark: Ref43;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">, 25, 358.</span></span>
+</div>                                                                                                                                        <div dir="ltr" class="mb-2 ltr justify text-justify"><span style="mso-bookmark: Ref43;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">[43]</span></span><span style="mso-bookmark: Ref43;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> Salehi, M., Sharifi, M. </span></span><a href="https://onlinelibrary.wiley.com/doi/10.1002/jcp.26481" target="_blank" rel="noopener"><span style="mso-bookmark: Ref43;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;">Exosomal miRNAs as novel cancer biomarkers: Challenges and opportunities.</span></span></a><span style="mso-bookmark: Ref43;"><span style="font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin;"> <em>Journal of Cellular Physiology</em>, <strong>2018</strong>, 233, 6370-6380.</span></span></div>                                                                                                                              </div>
+                                    </div>                	
+                                	</div>
+            
+            
+                                            
+            
+                                            
+            
+                                            
+                            </div>
+            
+            
+                        </div>
+                        <!-- /CENTER -->
+            
+                        <!-- LEFT -->
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+            
+                                                <div class="card mb-2">
+                        <div class="card-body ar_info_pnl p-2" id="ar_info_pnl_cover">
+            
+                        <div id="pnl_cover">
+                            <div class="row" >
+                                <div class="col-6">
+                            		<a class="js_click pointer_cursor" data-handler="loadModal" data-param_a="Advanced Journal of Nanochemistry and Medicine" data-param_b="./data/advjnm/coversheet/831793284164.jpg">
+                            			<img src="data/advjnm/coversheet/831793284164.jpg" alt="Advanced Journal of Nanochemistry and Medicine" class="img-fluid shadow-sm">
+                            		</a>
+                                </div>
+                                <div class="col-6">
+                                    <h6><a href="./issue_33805_34320.html">Volume 2, Issue 3</a><br/>Summer 2026<div id="sp_ar_pages">Pages <span dir="ltr">229-240</span></div></h6>
+                                    								</div>                                    
+                            </div>
+                            </div>
+            
+                         </div>
+                        </div>
+                                                    <!-- Download Files -->
+                                    
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pFiles">
+                            			<button class="accordion-button bg-light ps-2 pt-2 fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pFiles_" aria-expanded="true" aria-controls="pFiles_"><i class="fa-solid fa-file-lines me-2 mt-1"></i>Files</button>
+                            		</h2>
+                            		<div id="pFiles_" class="accordion-collapse collapse show" aria-labelledby="pFiles">
+                            			<div class="accordion-body p-2">
+            							                            	<div class="p-2" id="dv_ar_files">
+                        			                        				<div class="mb-2"><a href="./?_action=xml&amp;article=245566" target="_blank" class="tag_a pdf_link"><i class="fa fa-file-code-o text-orange fa-solid fa-code text-warning me-2" ></i> XML</a></div>
+                       				                         				<div class="mb-2"><a href="./article_245566_5f51f8d10d6f5fcbdf3b581b9d2a007f.pdf" target="_blank" class="tag_a pdf_link"><i class="fa fa-file-pdf-o text-red  fa-solid fa-file-pdf text-danger me-2" ></i> PDF <span dir="ltr" class="badge bg-light px-3 text-dark">1.32 M</span></a></div>
+                       				                                 <!-- Suplement Files -->
+                           		                                    	<div class="my-4">
+                                    	                                    	<audio class="col-12" controls preload="none" title="AJNM-2607-1044.mp3">
+                                    		<source src="./data/advjnm/fulltext/245566_0_98_1792854627.mp3">
+                                    	</audio>
+                                    	                                    	<div class="text-center"><small></small></div>
+                                    	</div>
+                                                                        <div class="row">
+                                                                        </div>
+            					                    			</div>
+                			                            			
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+                                                                        
+                                                        
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pDates">
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pDates_" aria-expanded="true" aria-controls="pDates_"><i class="fa-solid fa-clock-rotate-left me-2"></i>History</button>
+                            		</h2>
+                            		<div id="pDates_" class="accordion-collapse collapse" aria-labelledby="pDates">
+                            			<div class="accordion-body p-1 px-1">
+                            			
+                                		<ul class="list-group px-0">
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Receive Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">15 July 2026</span></li>
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Revise Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">15 August 2026</span></li>
+                                                                                            <li class="list-group-item px-0 border-0 list-group-item-action"><i class="fa-regular fa-calendar-check"></i> Accept Date <span class="badge transparent border text-dark px-2 pb-1 pt-2 border-opacity-10">22 August 2026</span></li>
+                                                                        			</ul>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>  
+                                          
+            								           		   
+            
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pShare">
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#pShare_" aria-expanded="true" aria-controls="pShare_"><i class="fa-solid fa-share-nodes me-2"></i>Share</button>
+                            		</h2>
+                            		<div id="pShare_" class="accordion-collapse collapse" aria-labelledby="pShare">
+                            			<div class="accordion-body p-3">
+                			    	                				    	<div class="row">
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_xtwitter" href="https://x.com/share?url=https://ajnm.samipubco.com/article_245566.html&amp;text=Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers" target="_blank" data-bs-toggle="tooltip" title="X-Twitter">
+                							<i class="fa-brands fa-x-twitter fa-2x m-1"></i>
+                						</a>
+                						</div>
+                				    	<div class="col-3 text-center social_icon p-1">
+                						<a id="share_facebook" href="https://www.facebook.com/sharer.php?u=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Facebook">
+                							<i class="fa-brands fa-square-facebook fa-2x m-1 "></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_mendeley" href="https://www.mendeley.com/import/?url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Mendeley">
+                							<i class="fa-brands fa-mendeley fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Linkedin">
+            								<i class="fa-brands fa-linkedin fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+            							<a id="share_instagram" href="https://www.instagram.com/?url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Instagram">
+            								<i class="fa-brands fa-instagram fa-2x m-1"></i>
+            							</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_email" class="js_click pointer_cursor" data-handler="act" data-param_a="email" data-bs-toggle="tooltip" title="Email">
+                							<i class="fa-regular fa-envelope fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_print" class="js_click pointer_cursor" data-handler="printDiv" data-param_a="dv_artcl" data-bs-toggle="tooltip" title="Print">
+                							<i class="fa-solid fa-print fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                 						<a id="share_stumble" href="https://mix.com/mixit?su=submit&url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="StumbleUpon">
+                							<i class="fa-brands fa-stumbleupon-circle fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_acedemia" class="" href="https://www.academia.edu/" target="_blank" data-bs-toggle="tooltip" title="Academia">
+                							<i class="ai ai-academia fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_sems" href="https://www.semanticscholar.org/" target="_blank" data-bs-toggle="tooltip" title="Semantic scholar">
+                							<i class="ai ai-semantic-scholar fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1 d-none">
+                						<a id="share_reddit" href="https://www.reddit.com/submit?url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Reddit">
+                							<i class="fa-brands fa-square-reddit fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_rg" href="https://www.researchgate.net/" target="_blank" data-bs-toggle="tooltip" title="Research Gate">
+                							<i class="fa-brands fa-researchgate fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                 						<a id="share_blogger" href="https://www.blogger.com/blog-this.g?u=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Blogger">
+                							<i class="fa-brands fa-blogger fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_pinterest" href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Pinterest">
+                							<i class="fa-brands fa-square-pinterest fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_digg" href="https://www.digg.com/submit?https://ajnm.samipubco.com/article_245566.html&title=Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers" target="_blank" data-bs-toggle="tooltip" title="Digg">
+                							<i class="fa-brands fa-digg fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_delicious" href="https://del.icio.us/post?url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Delicious">
+                							<i class="fa-brands fa-delicious fa-2x m-1"></i>
+                						</a>
+                						</div>
+                						<div class="col-3 text-center social_icon p-1">
+                						<a id="share_skype" href="https://web.skype.com/share?url=https://ajnm.samipubco.com/article_245566.html" target="_blank" data-bs-toggle="tooltip" title="Skype">
+                							<i class="fa-brands fa-skype fa-2x m-1"></i>
+                						</a>
+                            			</div></div>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+            
+                            <!-- Cite This Article -->
+                            
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pHowCite" >
+                            			<button class="accordion-button bg-light ps-2 pt-2 collapsed fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#ppHowCite" aria-expanded="true" aria-controls="ppHowCite"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>How to cite</button>
+                            		</h2>
+                            		<div id="ppHowCite" class="accordion-collapse collapse" aria-labelledby="pHowCite">
+                            			<div class="accordion-body p-2">
+                                            <ul class="list-group p-1" dir="ltr">
+                                                <li class="list-group-item border-0"><a class="tag_a"  href="./?_action=export&rf=ris&rc=245566">RIS</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=enw&rc=245566">EndNote</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=ris&rc=245566">Mendeley</a></li>
+                                                <li class="list-group-item border-0 ltr"><a class="tag_a"  href="./?_action=export&rf=bibtex&rc=245566">BibTeX</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-apa">APA</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-mla">MLA</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-harvard">HARVARD</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-chicago">CHICAGO</a></li>
+                                                                                                	<li class="list-group-item border-0 ltr"><a  class="tag_a pointer_cursor" data-bs-toggle="modal" data-bs-target="#cite-vancouver">VANCOUVER</a></li>
+                                                                                            </ul>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>  
+                                          
+            
+                            <!-- Article Statastic -->
+                                                        
+                            <div class="accordion mb-2" id="">
+                            	<div class="accordion-item">
+                            		<h2 class="accordion-header" id="pStat">
+                            			<button class="accordion-button bg-light ps-2 pt-2 fw-medium ac_ico_sm" type="button" data-bs-toggle="collapse" data-bs-target="#ppStat" aria-expanded="true" aria-controls="ppStat"><i class="fa-solid fa-chart-simple me-2"></i>Statistics</button>
+                            		</h2>
+                            		<div id="ppStat" class="accordion-collapse collapse show" aria-labelledby="pStat">
+                            			<div class="accordion-body p-2">
+                            				<table class="table table-sm table-borderless ">
+                                                                                                    <tr><td><a class="tag_a">Article View</a></td> <td dir="ltr"> <span class="badge bg-light text-dark px-3">69</span></td></tr>
+                                                                                                    <tr><td><a class="tag_a">PDF Download</a></td> <td dir="ltr"> <span class="badge bg-light text-dark px-3">37</span></td></tr>
+                                                                                            </table>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>                
+            
+                                    				</div>
+    				</div>
+            </div>
+            
+                <div class="col-md-3 col-sm-12 col-xs-12 order-md-1">
+                
+<div class="accordion shadow-sm mb-3">
+    <div class="card my-2 rounded-0" id="dv_home_search">
+        <div class="card-body px-2 pt-4">
+            <div class="searchBox">
+                <form action="./" method="get">
+                    <input type="hidden" name="_action" value="article">
+                    <div class="input-group">
+                        <input class="form-control rounded-0" type="text" name="keywords" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary rounded-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="ps-1 pt-1"><a href="./?_action=advSearch">Advanced Search</a></div>
+        </div>
+    </div>
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_home">
+        			<a href="././" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Home</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_browse">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_browse_" aria-expanded="true" aria-controls="pmenu_browse_">Browse</button>
+            		</h2>
+            		<div id="pmenu_browse_" class="accordion-collapse collapse" aria-labelledby="pmenu_browse">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./?_action=current">Current Issue</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=issue">By Issue</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=author">By Author</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./browse?_action=subject">By Subject</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./author.index">Author Index</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./keyword.index">Keyword Index</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_26794">
+        			<a href="./page_2852.html" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >A-Z Journals</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_29046">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_29046_" aria-expanded="true" aria-controls="pmenu_29046_">About  Publisher</button>
+            		</h2>
+            		<div id="pmenu_29046_" class="accordion-collapse collapse" aria-labelledby="pmenu_29046">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_3319.html">About  Publisher</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3320.html">The DNA of Sami Publishing Company</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3321.html">A Letter to Future Generations</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3161.html">SPC Publisher&#039;s Policies</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2966.html">Please follow SPC Publisher channels</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_info">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_info_" aria-expanded="true" aria-controls="pmenu_info_">Journal Info</button>
+            		</h2>
+            		<div id="pmenu_info_" class="accordion-collapse collapse" aria-labelledby="pmenu_info">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./journal/about">About Journal</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/aim_scope">Aims and Scope</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process?ethics">Publication Ethics</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3423.html">Publisher, Ownership and Financial Support</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3626.html">Editorial &amp; Publication Ethics Policy Manual</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2856.html">Journal Policies and Publication Standards</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2861.html">Publisher Business Model</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2850.html">Article Processing Charges</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2860.html">Publication Cycle-Process Flowchart</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3627.html">Journal Resources &amp; Quick Access</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process">Peer Review Process</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2857.html">Open Access Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2863.html">Self-Archiving Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3426.html">Privacy Statement</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3394.html">Journal Identity Profile</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/metrics">Journal Metrics</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2851.html">Benefits for Authors</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/links">Related Links</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/faq">FAQ</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./news">News</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_29074">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_29074_" aria-expanded="true" aria-controls="pmenu_29074_">Editorial Governance Manual</button>
+            		</h2>
+            		<div id="pmenu_29074_" class="accordion-collapse collapse" aria-labelledby="pmenu_29074">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_3322.html">Editorial &amp; Publishing Governance</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3347.html">Editorial Philosophy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3350.html">Copyright &amp; Licensing Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3348.html">Diamond Open Access Philosophy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3351.html">Corrections, Retractions and Expressions of Concern Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3352.html">Appeals and Complaints Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3353.html">Publication Ethics Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3630.html">Authorship and Contributorship Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3354.html">Conflict of Interest Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3355.html">AI and Generative Technologies Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3356.html">Data Availability Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3357.html">Editorial Independence Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3358.html">Research Misconduct Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3359.html">Archiving and Digital Preservation Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3360.html">Operational Excellence</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3379.html">Journal Statistics and Geographic Diversity</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3625.html">SPEGF Core Governance Document</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_3631.html">Quality Assurance and Continuous Improvement</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_indexing">
+        			<a href="./journal/indexing" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Indexing and Abstracting</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_edb">
+        			<a href="./journal/editorial.board" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Editorial Board</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_aug">
+        			<a href="./journal/authors.note" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Guide for Authors</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_submit">
+        			<a href="./author" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Submit Manuscript</a>
+        		</h2>
+			</div>
+		</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_26802">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_26802_" aria-expanded="true" aria-controls="pmenu_26802_">Editor Page</button>
+            		</h2>
+            		<div id="pmenu_26802_" class="accordion-collapse collapse" aria-labelledby="pmenu_26802">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_2854.html">Editors</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2853.html">Editorial Policies</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2855.html">Guidelines for Guest Editors</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+            <div class="accordion mb-1 accordion__group" id="">
+            	<div class="accordion-item border-0">
+            		<h2 class="accordion-header" id="pmenu_rev">
+            			<button class="accordion-button fw-bold collapsed shadow-sm bg-secondary main-menu nav-link rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#pmenu_rev_" aria-expanded="true" aria-controls="pmenu_rev_">Reviewers</button>
+            		</h2>
+            		<div id="pmenu_rev_" class="accordion-collapse collapse" aria-labelledby="pmenu_rev">
+            			<div class="accordion-body p-2">
+            			<ul class="list-group list-group-flush list-group-sm">
+	                    							<li class="list-group-item list-group-item-action"><a class="" href="./page_2862.html">Reviewers</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./page_2858.html">Peer Review Policy</a></li>
+													<li class="list-group-item list-group-item-action"><a class="" href="./journal/process">Peer Review Process</a></li>
+						  												
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_cu">
+        			<a href="./journal/contact.us" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Contact Us</a>
+        		</h2>
+			</div>
+		</div>			
+    
+        <div class="accordion mb-1 accordion__group" id="">
+        	<div class="accordion-item border-0">
+        		<h2 class="accordion-header" id="pmenu_27273">
+        			<a href="./page_2908.html" class="accordion-button shadow-sm fw-bold bg-secondary main-menu rounded-0 hid_ac_ico nav-link" >Using &amp; citation</a>
+        		</h2>
+			</div>
+		</div>			
+    
+</div>                </div>
+            
+        </div>
+	</div>
+</div></div>
+
+<div id="cite-apa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="apa" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="apa">APA</h6>
+			</div>
+			<div class="modal-body">
+				<p> Hadizadeh, M. & Askari, N. (2026). Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers. <em>Advanced Journal of Nanochemistry and Medicine</em>, <em>2</em>(3), 229–240. https://doi.org/10.48309/ajnm.2026.584690.1044</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-mla" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mla" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="mla">MLA</h6>
+			</div>
+			<div class="modal-body">
+				<p> Hadizadeh, M.,  & Askari, N. "Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers", <em>Advanced Journal of Nanochemistry and Medicine</em>, 2, 3, 2026, 229–240. doi: 10.48309/ajnm.2026.584690.1044</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-harvard" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="harvard" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="harvard">HARVARD</h6>
+			</div>
+			<div class="modal-body">
+				<p> Hadizadeh, M.,  & Askari, N. (2026). 'Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers', <em>Advanced Journal of Nanochemistry and Medicine</em>, 2(3), pp. 229–240. doi: 10.48309/ajnm.2026.584690.1044</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-chicago" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="chicago" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="chicago">CHICAGO</h6>
+			</div>
+			<div class="modal-body">
+				<p> Hadizadeh, M. & Askari, N., "Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers." Advanced Journal of Nanochemistry and Medicine, 2 3 (2026): 229–240,  doi: 10.48309/ajnm.2026.584690.1044</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cite-vancouver" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vancouver" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn btn-sm pe-1" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark fa-lg text-secondary"></i></button>
+				<h6 class="modal-title" id="vancouver">VANCOUVER</h6>
+			</div>
+			<div class="modal-body">
+				<p>Hadizadeh M., Askari N. Nanomedicine-induced transcriptomic biomarkers in gastrointestinal cancers. Adv. J. Nanochem. Med. 2026;2(3):229–240. doi: 10.48309/ajnm.2026.584690.1044</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+    <footer>
+        <div id="footer" class="container-fluid pt-3">
+            <div class="overlay"></div>
+                <div class="row equal widgetList">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox">
+                            <ul class="list-group">
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_home"><a href="./">Home</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_about"><a href="./journal/about">About Journal</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_Edb"><a href="./journal/editorial.board">Editorial Board</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_submit"><a href="./author">Submit Manuscript</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_contactus"><a href="./journal/contact.us">Contact Us</a></li>
+                                <li class="list-group-item bg-transparent border-0 py-1" id="fli_sitemap"><a href="./sitemap.xml?usr">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox news">
+                            <!-- Latest News -->
+                            <h5 class="letter-spacing-1">News</h5>
+                            <ul class="footer-posts list-unstyled">
+                                                            </ul>
+                            <!-- /Latest News -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 margin-bottom-20">
+                        <div class="widgetBox"></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="widgetBox">
+        					<h5 class="">Newsletter Subscription</h5>
+        					<p>Subscribe to the journal newsletter and receive the latest news and updates</p>
+        
+        					<form class="validate" action="" method="post" data-success="Subscription saved successfully." data-toastr-position="bottom-right">
+        						        						<input type="hidden" name="_token" value="e6a6916dda6ed960b28155e679f8aae0cfa9c6265bca1d00"/>
+                                <div class="input-group">
+                                 	<span class="input-group-text" id=""><i class="fa-regular fa-envelope"></i></span>
+                                    <input class="form-control mr-2" type="email" name="email" maxlength="40" aria-label="Enter your Email">
+                                    <button class="btn btn-primary" type="button" id="btn_sbscrb">Subscribe</button>
+                                </div>
+        					</form>
+
+					<div class="mt-3">
+					    <ul class="list-inline">
+					
+												<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://whatsapp.com/channel/0029VaGWFVT3rZZij5vxI21E" target="_blank" data-bs-toggle="tooltip" data-bs-title="Whatsapp" title="Whatsapp">
+							<i class="fa-brands fa-square-whatsapp fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://t.me/Sami_Publishing_Company" target="_blank" data-bs-toggle="tooltip" data-bs-title="Telegram" title="Telegram">
+							<i class="fa-brands fa-telegram fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://youtube.com/@samipublishingcompany?si=p1FEA6oKDzlKXjsN" target="_blank" data-bs-toggle="tooltip" data-bs-title="Youtube" title="Youtube">
+							<i class="fa-brands fa-youtube fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://www.instagram.com/sami_publishing_companyllc?igsh=ZHF4azB6NWFjbnB6&utm_source=qr" target="_blank" data-bs-toggle="tooltip" data-bs-title="Instagram" title="Instagram">
+							<i class="fa-brands fa-instagram fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://www.linkedin.com/groups/11810042/" target="_blank" data-bs-toggle="tooltip" data-bs-title="Linkedin" title="Linkedin">
+							<i class="fa-brands fa-linkedin fa-2x m-1"></i>							
+							</a></li>
+														<li class="list-inline-item mx-0 social_icon"><a class="social_icon" href="https://x.com/AJNM2025" target="_blank" data-bs-toggle="tooltip" data-bs-title="X-Twitter" title="X-Twitter">
+							<i class="fa-brands fa-x-twitter fa-2x m-1"></i>							
+							</a></li>
+													<li class="list-inline-item mx-0 social_icon"><a class="" href="./ju.rss" data-bs-toggle="tooltip" data-bs-title="RSS" data-bs-title="RSS"><i class="fa-solid fa-square-rss fa-2x m-1"></i></a></li>
+					</ul>
+					</div>
+						</div>
+                    </div>
+                </div>
+                <div class="copyright" style="position: relative">
+                &copy; Journal management system. <span id='sp_crt'>designed by <a target='_blank' href='https://www.sinaweb.net/'>sinaweb</a></span> 
+                </div>
+            </div>
+        </footer>
+
+		<button class="btn btn-sm btn-primary position-fixed bottom-0 end-0 translate-middle d-none shadow-sm  js_click pointer_cursor" data-handler="scrollToTop"  data-param_a="" id="back-to-up"><i class="fa-solid fa-chevron-up"></i></button>
+        <!-- user defined scripts-->
+        
+        <!-- Extra Script Scripts -->
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"38b40ebbec3043e5a856c4f5f1e40cd2","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+<div id="actn_modal" class="modal fade" tabindex="-1">
+	<div id="modal_dlg" class="modal-dialog modal_aw modal-lg">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<button type="button" class="btn px-1 float-end" data-bs-dismiss="modal" title="Close Window" aria-label="Close"><i class="fa-solid fa-xmark text-secondary"></i></button>
+				<span class="modal-title"></span>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
